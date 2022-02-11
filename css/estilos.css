@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nunito:wght@300;400&family=Great+Vibes&family=Sacramento&family=Source+Sans+Pro:wght@400;600&display=swap');
+@font-face {
+    font-family: 'LOVE-YOU';
+    src: url('../fuente/loveyou.otf');
+    font-family: 'abyssopelagic';
+    src: url('../fuente/abyssopelagic.otf');
+}
+ /*   */
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    scroll-behavior: smooth;      
+    font-family: 'Source Sans Pro', sans-serif;     
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: auto;        
+}
+
+.header__container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 10px 20px;
+    border-bottom: #ae905c 1px solid;
+}
+
+.header__anchorlogo{
+    text-decoration: none;    
+    align-self: center;
+}
+
+.header__name{       
+    font-family: 'Sacramento', cursive;
+    font-size: 4.5rem;
+    color: #ae905c;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.header__imagelogo{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;    
+}
+
+.header__image{
+    width: 120px;
+    height:60px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.header__h2{
+    padding: 15px;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    color: #ae905c;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    }
+
+.header__shop{
+    display: flex;
+    align-items: center;
+}
+
+.header__svg{
+    width: 40px;
+    height: 40px;
+    color:#a8a7a7;
+}
+
+.header__svg:hover{
+    color: #ae905c;
+}
+
+.header__container2{    
+    display: flex;    
+    justify-content: center;   
+    padding: 20px 0 10px 0;
+    font-size: 1.5rem;
+    border-bottom: #ae905c 1px solid;
+    vertical-align: middle;
+    position: sticky;
+}
+
+.header__list{
+    display: flex;   
+    gap: 30px;
+}
+
+.header__item{
+    list-style: none;
+    cursor: pointer;     
+}
+
+.header__link{       
+    color:#ae905c;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+}
+
+.header__link--active{
+    text-decoration: underline;
+    text-decoration:#ae905c;
+}
+
+.header__item--hover:hover > .header__sublist{
+    display: block;
+}
+
+.header__sublist{
+    position: absolute;
+    display: none;
+    background-color: #303030;        
+    padding: 10px 10px;     
+}
+
+.header__subitem{
+    text-align: center;
+    list-style: none;
+    padding: 5px;    
+}
+
+.header__sublink{
+    font-size: 1.2rem;
+    text-decoration: none;    
+    color:  #c2bdbd;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.header__sublink:hover{  
+    color: #ffffff;
+}
+
+.header__link:hover{  
+    text-decoration: underline;
+    color: #ae905c;
+}
+
+.header__input{
+    margin: -15px 0px 0px 45px;
+    height: 4rem;
+    border-radius: 3rem;
+    border-color: #ae905c;
+}
+
+.main{
+    grid-row: 2/3;
+}
+
+.main__section{
+    padding: 15px 0;
+    background-color: #ae905c;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main__image{
+    width: 100%;
+}
+
+.main__product{
+    padding-top: 20px;
+}
+
+/*old*/
+
+
+.general__title{
+    color:#0F0A0A;
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'abyssopelagic';
+}
+
+.general__title--margin{
+    margin-top: 30px;
+}
+
+.product__container{    
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: repeat(3,auto);
+}
+
+.product__description1, .product__description2, .product__description3{
+    text-align: center;
+}
+
+.product__description1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 60px;
+}
+
+.product__description2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 60px;
+}
+.product__description3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.product__image{
+    width: 500px;  
+    height: 300px;  
+}
+
+.product__ad1, .product__ad2, .product__ad3{
+    
+    font-size: 3.5rem; 
+    text-transform: uppercase;    
+    letter-spacing: 2rem;
+    
+}
+
+.product__ad1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.product__ad2{
+    grid-column: 1/2;
+    grid-row: 2/3;    
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.product__ad3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+
+.product__p{
+    border: #A1511B 5px solid;
+    padding: 8px 8px
+}
+
+.product__link{    
+    text-decoration: none;
+}
+
+.product__subtitle{
+    font-size: 2rem;   
+    text-align: center;
+    color: #0F0A0A; 
+}
+
+
+.footer__flex{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/back6.jpeg");   
+    
+}
+
+.footer__subflex1{
+    display: grid;
+    background-color: #4e3212c4;
+    grid-template-columns: 1fr, auto, 3fr;
+}
+
+.footer__first{
+    grid-column: 1/2;    
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer__p{
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    color:#D4BC8C;
+    padding-bottom: 10px;
+
+}
+
+.footer__item{
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.footer__page{
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer__second{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 110px;
+}
+
+.footer__logo{
+    color: #D4BC8C;
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+}
+
+.footer__ul{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__pagenetwork{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:aliceblue;
+    letter-spacing: 0.2rem;
+}
+
+.footer__pagenetwork:hover{
+color: #f39f3e;
+}
+
+.svg{
+    width: 2rem;
+    height:2rem;
+    color: white;
+}
+
+.svg:hover{
+    color: #f39f3e;
+}
+
+.svg__contact{
+    width: 1.5rem;
+    height: 1.5rem;      
+    color: white;  
+}
+
+.footer__third{
+    grid-column: 3/4;
+    margin-top: 50px;
+}
+
+.footer__page--hover:hover{
+    color: #f39f3e;
+}
+
+.footer__subflex2{
+    padding: 15px 0;    
+    color: white;
+    text-align: center;    
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;
+    background-color: #4e3212c4;
+} 
+
+.grid{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 100% 30%;
+}
+
+.main__grid{
+    justify-self: center;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    margin: 10px 10px;    
+}
+
+.h2__grid{
+    font-size: 3rem;
+    color: #bc4e9c;
+    text-align: center;
+    margin:30px 0;
+}
+
+.nosotros__section{
+    display: flex;    
+}
+
+.nosotros__portrait{
+    width: 50%;
+    height:80%;
+    
+}
+
+.nosotros__h1{
+    width: auto;
+    margin-top: 200px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+.article__grid{
+    margin: 40px 10px;
+
+}
+
+.productos__contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;    
+    margin: 30px;
+}
+
+.image__size{
+    width: 600px;
+    height: 500px;
+}
+
+.productos__toped{
+    margin: 30px;
+}
+
+.productos__title{
+    margin:30px;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(69, 49, 88);
+}
+
+.aside__grid{
+    justify-self: center;
+}
+
+.aside__container{
+    margin: 30px 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.aside__iframe{
+    height: 350px;
+    width: 350px;
+}  
+
+
+/*media queries*/
+
+@media screen and (max-width: 768px){
+    .header__container1{
+        display:inline-block;
+    }
+    .header__list{
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .main__section {
+        padding: 15px 10px;
+    }
+    .product__container {
+        width: 100%;
+        display: inline-block;
+    }
+    .product__image {
+        width: 100%;
+        height: 100%;
+    }
+    .general__title{
+        margin-bottom: 0px;
+    }
+    .product__description1 {
+       margin-top: 0px; 
+    }
+    
+    .footer__subflex1{
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr;
+        grid-template-areas: 
+        " logo logo"
+        "link contact";
+    }
+        
+    .footer__first{
+        grid-area:link;
+    }
+        
+    .footer__second{
+        grid-area: logo;
+    }
+        
+    .footer__third{
+        grid-area: contact;
+    }
+}
+@media screen and (max-width: 425px){
+    
+}
+  
