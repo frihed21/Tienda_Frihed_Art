@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link rel="stylesheet" href="./css/estilos.css">
+<head>    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frihed Art</title>
     <link rel="shortcut icon" href="./img/logo_frihedart.ico" type="image/x-icon">    
     <script src="https://kit.fontawesome.com/fb50aa8998.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
@@ -31,13 +33,13 @@
         </div>
         <nav class="header__container2">           
             <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="./nosotros/nosotros.html">BIO</a></li>
+                    <li class="header__item"><a class="header__link" href="./nosotros/nosotros.html">BIO </a></li>
                     <li class="header__item header__item--hover"><a class="header__link" href="#">PINTURAS</a> 
                         <ul class="header__sublist"> 
                             <li class="header__subitem"><a class="header__sublink" href="./pinturas/acuarelas.html">ACUARELA</a></li>
                             <li class="header__subitem"><a class="header__sublink" href="./pinturas/acrilicos.html">ACRILICO</a></li>
                             <li class="header__subitem"><a class="header__sublink" href="./pinturas/digital.html">DIGITAL</a></li>
-                        </ul>
+                        </ul>   
                     </li>
                     <li class="header__item header__item--hover"><a class="header__link" href="#">PAPELERIA</a> 
                         <ul class="header__sublist"> 
@@ -53,18 +55,176 @@
                     </li>
                     <li class="header__item"><a class="header__link" href="./contacto/contacto.html">CONTACTO</a></li>
             </ul>
-            <form action="" method="get" enctype="text/plain">
-                <input class="header__input" type="search" name="s" id="idsearch" placeholder="  Buscar..." > 
+            <form class="header__form" action="" method="get" enctype="text/plain">
+                <input  class="header__input" type="search" name="s" id="idsearch" placeholder="  Buscar..." > 
             </form>    
         </nav>              
     </header>
 
     <main class="main">
-        <section class="main__section">
+        <div class="main__div">
             <p>Atención Presencial ➝ Lunes a Sábado de 8 am a 8 pm y Domingo de 11 am a 6 pm en Av. 2 de Octubre Calle 7 Los Olivos</p>
+        </div>
+        <!-- <img class="main__image" src="./img/picture2.jpg" alt="portada"> -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/picture2.jpg" class="d-block w-100 img-carrusel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/picture3.jpg" class="d-block w-100 img-carrusel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/picture4.jpg" class="d-block w-100 img-carrusel" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <img class="main__image" src="./img/picture2.jpg" alt="portada">
-        <div class="main__product" >   
+    
+        <div class="grillado">
+            <div><img src="https://picsum.photos/id/220/400/300.jpg"/></div>
+            <div class="vertical"><img src="https://picsum.photos/id/221/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/222/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/223/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/300/400/300.jpg"/></div>
+            <div class="grande"><img src="https://picsum.photos/id/225/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/325/400/300.jpg"/></div>
+            <div class="vertical"><img src="https://picsum.photos/id/425/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/525/400/300.jpg"/></div>
+            <div class="horizontal"><img src="https://picsum.photos/id/625/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/500/400/300.jpg"/></div>
+            <div class="grande"><img src="https://picsum.photos/id/825/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/925/400/300.jpg"/></div>
+            <div class="horizontal"><img src="https://picsum.photos/id/550/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/650/400/300.jpg"/></div>
+            <div class="grande"><img src="https://picsum.photos/id/350/400/300.jpg"/></div>
+            <div><img src="https://picsum.photos/id/450/400/300.jpg"/></div>
+            <div class="vertical"><img src="https://picsum.photos/id/950/400/300.jpg"/></div>      
+        </div>
+
+        <section class="container">
+            <di class="row">
+                <div class="col-md-6">
+                    <div>
+                        <span>10% OFF</span>
+                        <span>Friends</span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat reiciendis neque! Ex, cumque sint reprehenderit odio dolorem commodi qui. Aperiam officiis quisquam nisi eaque hic soluta? Voluptatibus, quam illo!</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>VER PRODUCTOS</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="section1__img" src="./img/pintura1.jpg" alt="">
+                </div>
+            </di>
+            <di class="row">
+                <div class="col-md-6">
+                    <img class="section1__img" src="./img/pintura1.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <span>10% OFF</span>
+                        <span>Friends</span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat reiciendis neque! Ex, cumque sint reprehenderit odio dolorem commodi qui. Aperiam officiis quisquam nisi eaque hic soluta? Voluptatibus, quam illo!</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>VER PRODUCTOS</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </di>
+            <di class="row">
+                <div class="col-md-6">
+                    <div>
+                        <span>10% OFF</span>
+                        <span>Friends</span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat reiciendis neque! Ex, cumque sint reprehenderit odio dolorem commodi qui. Aperiam officiis quisquam nisi eaque hic soluta? Voluptatibus, quam illo!</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>VER PRODUCTOS</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="section1__img" src="./img/pintura1.jpg" alt="">
+                </div>
+            </di>
+            <di class="row">
+                <div class="col-md-6">
+                    <img class="section1__img" src="./img/pintura1.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <span>10% OFF</span>
+                        <span>Friends</span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat reiciendis neque! Ex, cumque sint reprehenderit odio dolorem commodi qui. Aperiam officiis quisquam nisi eaque hic soluta? Voluptatibus, quam illo!</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>VER PRODUCTOS</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </di>
+            <di class="row">
+                <div class="col-md-6">
+                    <div>
+                        <span>10% OFF</span>
+                        <span>Friends</span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat reiciendis neque! Ex, cumque sint reprehenderit odio dolorem commodi qui. Aperiam officiis quisquam nisi eaque hic soluta? Voluptatibus, quam illo!</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>VER PRODUCTOS</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="section1__img" src="./img/pintura1.jpg" alt="">
+                </div>
+            </di>
+        </section>
+
+
+        <!-- <div class="main__product" >   
             <h2 class="general__title">Productos</h2>
                 <div class="product__container">
                     <div class="product__description1">
@@ -100,7 +260,7 @@
                         <p class="product__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in dignissimos.</p>
                     </div>                    
                 </div>
-        </div>       
+        </div>        -->
     </main>
 
     <footer class="footer__flex"> 
@@ -169,5 +329,6 @@
             <p class="footer__copyright">Diseñado por Káterin Morales</p>    
         </div>                    
     </footer>
+    <script src="./js/bootstrap.js"></script>
 </body>
 </html>
