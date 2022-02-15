@@ -1,267 +1,188 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="shortcut icon" href="../img/logo_frihedart.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/e801d605c3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header">
-        <div class="header__container1">
-            <a class="header__anchorlogo" href="../index.html">
-                <h1 class="header__name">Frihed Art</h1>
-            </a>
-            <a class="header__imagelogo" href="../index.html">            
-                <img class= "header__image" src="../img/logo.svg" alt="logo">
-                <h2 class="header__h2">KATERIN HINOSTROZA</h2>
-            </a>
-            <div class="header__shop">
-                <a href="../cuenta/micuenta.html">
-                    <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
+<html lang="en">
+    <head>    
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frihed Art</title>
+        <link rel="shortcut icon" href="../img/logo_frihedart.ico" type="image/x-icon">    
+        <script src="https://kit.fontawesome.com/fb50aa8998.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>       
+    <body>
+        <header class="header">
+            <div class="header__container1">
+                <a class="header__anchorlogo" href="../index.html">
+                    <h1 class="header__name">Frihed Art</h1>
                 </a>
-                <a href="#">
-                    <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-shopping" class="svg-inline--fa fa-cart-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg>
+                <a class="header__anchorlogo" href="../index.html">          
+                    <img class= "header__image" src="../img/logo.svg" alt="logo">
+                    <h2 class="header__h2">KATERIN HINOSTROZA</h2>
                 </a>
-            </div>            
-        </div>
-        <nav class="header__container2">              
-            <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="../nosotros/nosotros.html">BIO</a></li>
-                    <li class="header__item header__item--hover"><a class="header__link header__link--active" href="#">PINTURAS</a> 
-                        <ul class="header__sublist"> 
-                            <li class="header__subitem"><a class="header__sublink" href="../pinturas/acuarelas.html">ACUARELA</a></li>
-                            <li class="header__subitem"><a class="header__sublink" href="#">ACRILICO</a></li>
-                            <li class="header__subitem"><a class="header__sublink" href="../pinturas/digital.html">DIGITAL</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__item header__item--hover"><a class="header__link" href="#">PAPELERIA</a> 
-                        <ul class="header__sublist"> 
-                            <li class="header__subitem"><a class="header__sublink" href="../papeleria/cuadernos.html">CUADERNOS</a></li>
-                            <li class="header__subitem"><a class="header__sublink" href="../papeleria/greetingcard.html">GREETING CARD SET</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__item header__item--hover"><a class="header__link" href="#">CROCHET</a> 
-                        <ul class="header__sublist"> 
-                            <li class="header__subitem"><a class="header__sublink" href="../crochet/amigurumis.html">AMIGURUMIS</a></li>
-                            <li class="header__subitem"><a class="header__sublink" href="../crochet/ropa.html">ROPA</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__item"><a class="header__link" href="../contacto/contacto.html">CONTACTO</a></li>
-            </ul>
-            <form class="header__form" action="" method="get" enctype="text/plain">
-                <input class="header__input" type="search" name="s" id="idsearch" placeholder="  Buscar..." > 
-            </form>    
-        </nav>              
-    </header>
-
-    <main>
-        <h2 class="productos__title">Pinturas</h2> 
-        <section class="productos__toped">
-            <label for="idfiltro"></label>
-                 <select name="campofiltro" id="idfiltro">
-                    <option value="" disabled selected>Ordenar por:</option>
-                    <option value="tamaño">Tamaño</option>
-                     <option value="precio">Precio</option>
-                 </select>  
-       </section>    
-        <div class="productos__contenedor">                
-            <section>
-                    <img class="image__size" src="../img/pintura1.jpg" alt="pintura1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>                
-            </section>
-            <section>                
-                    <img class="image__size" src="../img/pintura2.jpg" alt="pintura1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>                
-            </section>
-            <section>                
-                    <img class="image__size" src="../img/pintura3.jpg" alt="pintura1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>                
-            </section>
-            <section>                
-                    <img class="image__size" src="../img/pintura4.jpg" alt="pintura1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>                
-            </section>
-        </div>
-
-    <h2 class="productos__title">Manualidades</h2>  
-        
-        <div class="productos__contenedor">
-             <!-- <section>
-                 <label for="idfiltro"></label>
-                     <select name="campofiltro" id="idfiltro">
-                          <option value="" disabled selected>Ordenar por:</option>
-                          <option value="tamaño">Tamaño</option>
-                         <option value="precio">Precio</option>
-                     </select>  
-             </section>                 -->
-            <section>
-                    <img class="image__size" src="../img/manualidades1.png" alt="manualidad1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 20cm x 30cm</p>
-                    <p>precio: s/. 30 </p>
-                    <button>Comprar</button>
-            </section>
-            <section>
-                    <img class="image__size" src="../img/manualidades2.png" alt="manualidad2">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 10cm x 20cm</p>
-                    <p>precio: s/. 20 </p>
-                    <button>Comprar</button>
-            </section>
-            <section>
-                    <img class="image__size" src="../img/manualidades3.png" alt="manualidad3">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>
-            </section>
-            <section>
-                    <img class="image__size" src="../img/manualidades4.png" alt="manualidad4">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>
-             </section>
-            <section>
-                    <img class="image__size" src="../img/manualidades5.png" alt="manualidad5">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>
-            </section>
-        </div>
-         
-    <h2 class="productos__title">Crochet</h2>
-             <div class="productos__contenedor">
-                <!-- <section>            
-                    <label for="idfiltro"></label>
-                        <select name="campofiltro" id="idfiltro">
-                            <option value="" disabled selected>Ordenar por:</option>
-                            <option value="tamaño">Tamaño</option>
-                            <option value="precio">Precio</option>
-                         </select>
-                 </section> -->
-                 <section>
-                    <img class="image__size" src="../img/crochet1.png" alt="crochet1">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 20cm x 30cm</p>
-                    <p>precio: s/. 30 </p>
-                    <button>Comprar</button>
-                </section>
-                <section>
-                    <img class="image__size" src="../img/crochet2.png" alt="crochet2">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 10cm x 20cm</p>
-                    <p>precio: s/. 20 </p>
-                    <button>Comprar</button>
-                </section>
-                <section>
-                    <img class="image__size" src="../img/crochet3.png" alt="crochet3">
-                    <p>descripcion del producto blablablablalblall </p>
-                    <p>tamaño: 50cm x 30cm</p>
-                    <p>precio: s/. 60 </p>
-                    <button>Comprar</button>
-                </section>
+                <div class="header__shop">
+                    <a href="../cuenta/micuenta.html">
+                        <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-shopping" class="svg-inline--fa fa-cart-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg>
+                    </a>
+                </div>            
             </div>
-    <h2 class="productos__title">Nuestros Clientes</h2>
-        
-        <section>
-                <img src="../img/cliente1.png" alt="cliente1">
-                <p>opiniones Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem tempora. Quod sed, cum explicabo nisi asperiores dicta natus architecto laborum, voluptatum quidem minima fugit! Ea exercitationem in voluptatibus. Omnis.</p>
-                <p>calificación</p>
-                <img src="../img/cliente2.png" alt="cliente2">
-                <p>opiniones Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem tempora. Quod sed, cum explicabo nisi asperiores dicta natus architecto laborum, voluptatum quidem minima fugit! Ea exercitationem in voluptatibus. Omnis.</p>
-                <p>calificación</p>
-                <img src="../img/cliente3.png" alt="cliente3">
-                <p>opiniones Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem tempora. Quod sed, cum explicabo nisi asperiores dicta natus architecto laborum, voluptatum quidem minima fugit! Ea exercitationem in voluptatibus. Omnis.</p>
-                <p>calificación</p>
-                <img src="../img/cliente4.png" alt="cliente4">
-                <p>opiniones Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem tempora. Quod sed, cum explicabo nisi asperiores dicta natus architecto laborum, voluptatum quidem minima fugit! Ea exercitationem in voluptatibus. Omnis.</p>
-                <p>calificación</p>
-        </section>
-    </main>
-    <footer class="footer__flex"> 
-        <div class="footer__subflex1"> 
-            <div class="footer__first">
-                <p class="footer__p">LINKS RÁPIDOS:</p>            
-                <ul class="footer__links">                
-                    <li class="footer__item"><a class="footer__page footer__page--hover" href="../nosotros/nosotros.html">Biografía</a></li>
-                    <li class="footer__item"><a class="footer__page footer__page--hover" href="../preguntas/preguntas.html">Preguntas</a></li>
-                    <li class="footer__item"><a class="footer__page footer__page--hover" href="../contacto/contacto.html">Contacto</a></li>
+            <nav class="header__container2">           
+                <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="../nosotros/nosotros.html">BIO </a></li>
+                        <li class="header__item header__item--hover"><a class="header__link header__link--active" href="#">PINTURAS</a> 
+                            <ul class="header__sublist"> 
+                                <li class="header__subitem"><a class="header__sublink" href="../pinturas/acuarelas.html">ACUARELA</a></li>
+                                <li class="header__subitem"><a class="header__sublink" href="#">ACRILICO</a></li>
+                                <li class="header__subitem"><a class="header__sublink" href="../pinturas/digital.html">DIGITAL</a></li>
+                            </ul>   
+                        </li>
+                        <li class="header__item header__item--hover"><a class="header__link" href="#">PAPELERIA</a> 
+                            <ul class="header__sublist"> 
+                                <li class="header__subitem"><a class="header__sublink header__sublink--active" href="../papeleria/cuadernos.html">CUADERNOS</a></li>
+                                <li class="header__subitem"><a class="header__sublink" href="../papeleria/greetingcard.html">GREETING CARD SET</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__item header__item--hover"><a class="header__link" href="#">CROCHET</a> 
+                            <ul class="header__sublist"> 
+                                <li class="header__subitem"><a class="header__sublink" href="../crochet/amigurumis.html">AMIGURUMIS</a></li>
+                                <li class="header__subitem"><a class="header__sublink" href="../crochet/ropa.html">ROPA</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__item"><a class="header__link" href="../contacto/contacto.html">CONTACTO</a></li>
                 </ul>
-            </div>
-            <div class="footer__second">
-                <div>              
-                    <p class="footer__logo">Frihed Art</p>
+                <form class="header__form" action="" method="get" enctype="text/plain">
+                    <input  class="header__input" type="search" name="s" id="idsearch" placeholder="  Buscar..." > 
+                </form>    
+            </nav>              
+        </header>
+
+        <main>
+            <section class="container mt-5">
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 1</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 2</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 3</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                    </div>
                 </div>
-                <div>
-                    <ul class="footer__ul">
-                        <li class="footer__li">
-                            <a class="footer__pagenetwork" href="https://facebook.com/" target="_blank">
-                                <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg>
-                                <p class="footer__subtitle">Facebook</p> 
-                            </a>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 1</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 2</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 3</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 1</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 2</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                    </div>
+                    <div class="col-md-4">
+                        <img width="300" height="300" src="../img/picture2.jpg" alt="">
+                        <h2>titular 3</h2>
+                        <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer__flex"> 
+            <div class="footer__subflex1"> 
+                <div class="footer__first">
+                    <p class="footer__p">LINKS RÁPIDOS:</p>            
+                    <ul class="footer__links">                
+                        <li class="footer__item"><a class="footer__page footer__page--hover" href="../nosotros/nosotros.html">Biografía</a></li>
+                        <li class="footer__item"><a class="footer__page footer__page--hover" href="../preguntas/preguntas.html">Preguntas</a></li>
+                        <li class="footer__item"><a class="footer__page footer__page--hover" href="../contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__second">
+                    <div>              
+                        <p class="footer__logo">Frihed Art</p>
+                    </div>
+                    <div>
+                        <ul class="footer__ul">
+                            <li class="footer__li">
+                                <a class="footer__pagenetwork" href="https://facebook.com/" target="_blank">
+                                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg>
+                                    <p class="footer__subtitle">Facebook</p> 
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__pagenetwork" href="https://instagram.com/" target="_blank">
+                                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                    <p class="footer__subtitle">Instagram</p> 
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__pagenetwork" href="https://whatsapp.com" target="_blank">
+                                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+                                    <p class="footer__subtitle">whatsapp</p> 
+                                </a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__pagenetwork" href="https://github.com/" target="_blank">
+                                    <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                                    <p class="footer__subtitle">Github</p> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__third">
+                    <p class="footer__p">CONTACTO:</p>
+                    <ul class="footer__links">
+                        <li class="footer__item">
+                            <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-screen-button" class="svg-inline--fa fa-mobile-screen-button" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"></path></svg>
+                            <span class="footer__page">997127018</span>
                         </li>
-                        <li class="footer__li">
-                            <a class="footer__pagenetwork" href="https://instagram.com/" target="_blank">
-                                <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                                <p class="footer__subtitle">Instagram</p> 
-                            </a>
+                        <li class="footer__item">
+                            <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg>
+                            <span class="footer__page">krafort2121@gmail.com</span>
                         </li>
-                        <li class="footer__li">
-                            <a class="footer__pagenetwork" href="https://whatsapp.com" target="_blank">
-                                <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
-                                <p class="footer__subtitle">whatsapp</p> 
-                            </a>
-                        </li>
-                        <li class="footer__li">
-                            <a class="footer__pagenetwork" href="https://github.com/" target="_blank">
-                                <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                                <p class="footer__subtitle">Github</p> 
-                            </a>
+                        <li class="footer__item">
+                            <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" class="svg-inline--fa fa-location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg>
+                            <span class="footer__page">Lima,Perú</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer__third">
-                <p class="footer__p">CONTACTO:</p>
-                <ul class="footer__links">
-                    <li class="footer__item">
-                        <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-screen-button" class="svg-inline--fa fa-mobile-screen-button" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"></path></svg>
-                        <span class="footer__page">997127018</span>
-                    </li>
-                    <li class="footer__item">
-                        <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg>
-                        <span class="footer__page">krafort2121@gmail.com</span>
-                    </li>
-                    <li class="footer__item">
-                        <svg class="svg__contact" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" class="svg-inline--fa fa-location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg>
-                        <span class="footer__page">Lima,Perú</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__subflex2">
-            <p class="footer__copyright">©2022 Lima-Perú. Todos los derechos reservados.</p>            
-            <p class="footer__copyright">Diseñado por Káterin Morales</p>    
-        </div>                    
-    </footer>
-  
-</body>
+            <div class="footer__subflex2">
+                <p class="footer__copyright">©2022 Lima-Perú. Todos los derechos reservados.</p>            
+                <p class="footer__copyright">Diseñado por Káterin Morales</p>    
+            </div>                    
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.js"></script>
+    </body>
 </html>
