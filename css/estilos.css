@@ -234,8 +234,19 @@ color: #f39f3e;
     object-fit: cover; 
   }
 
-
+  .img__height{
+      height: 280px;
+  }
+ 
   
+
+
+
+
+
+
+
+
 
 
 .grillado{
