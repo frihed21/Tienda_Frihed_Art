@@ -1,0 +1,68 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: auto;            
+    &__anchorlogo{
+        text-decoration: none;    
+        align-self: center;
+    }
+    &__name{       
+        font-family: 'Sacramento', cursive;
+        font-size: 4.5rem;
+        color: #ae905c;
+        /* animation-name: aparecer; */
+        animation-duration: 2s;
+    }
+    &__name {
+        text-align: -webkit-left;
+        padding-left: 20px;
+    }
+    &__imagelogo{
+        text-decoration: none;
+    }
+    &__imag{
+        width: 95px;
+        animation-name: aparecer;
+        animation-duration: 2s;
+    }    
+    &__h3{
+        padding: 10px;
+        letter-spacing: 0.3rem;
+        color: #ae905c;
+        animation-name: aparecer;
+        animation-duration: 2s;
+    }
+    &__separation {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 30px 0 0;
+    }
+    &__svg{
+        width: 25px;
+        height: 29px;
+        color:#a8a7a7;
+    }
+    &__svg:hover{
+        color: #ae905c;
+    }
+    &__image{
+        width: 65px;
+    }
+    &__link--active{  
+        padding-bottom: 5px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        color:#ae905c;
+    }
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    }
+
+
+    
+        
+    

@@ -1,0 +1,74 @@
+
+@media screen and (min-width:1024px){
+    .line-effect::after, .line-effect::before{
+        width: 360px;
+    }
+
+    .line-effect::before{
+        left: 30px;
+    }
+    
+    .line-effect::after{
+        right: 30px;
+    }
+
+    ul.navbar-nav{
+        gap:30px;
+    }   
+    ul.navbar-nav.fs-5 {
+        gap: 20px;
+    }
+}
+
+  @media screen and (max-width:768px){
+    .line-effect::after, .line-effect::before{
+        width: 260px;
+    }
+    .line-effect::before{
+        left: 20px;
+    }
+    
+    .line-effect::after{
+        right: 20px;
+    }
+
+    .d-flex{
+        width: 200px;
+    }
+}
+
+@media screen and ( max-width: 425px){
+    .line-effect::after, .line-effect::before{
+        margin-top: 10px;
+        width: 120px;
+    }
+    .line-effect::before{
+        left: 10px;
+    }
+    
+    .line-effect::after{
+        right: 10px;
+    }
+
+    .header__separation {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .grillado{
+      grid-template-columns: 1fr; }
+
+      .line-effect::after, .line-effect::before{
+        margin-top: 10px;
+        width: 80px;
+    }
+    .line-effect::before{
+        left: 10px;
+    }    
+    .line-effect::after{
+        right: 10px;
+    }  
+}
+

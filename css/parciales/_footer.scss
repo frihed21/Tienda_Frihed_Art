@@ -1,0 +1,43 @@
+.footer{
+    letter-spacing: 0.1rem;    
+    &__title{
+        color: #ae905c;
+    }
+    &__subtitle{
+        color: #978888;
+        font-weight: bold;
+    }
+    &__text{
+        color: #818181;
+    }    
+    &__pagenetwork:hover{
+       color: #ae905c;
+    }
+    &__li{
+        list-style: none;
+    }
+    &__a{
+        text-decoration: none;
+        color: #818181;
+    }
+    &__bg{
+        background-color: #eeeeee;
+    }
+    &__last{
+        background-color:#303030;
+    }    
+    &__svg{
+        width: 2rem;
+        height:2rem;
+        color: #ae905c;
+        &:hover{
+            color: white;
+        }   
+    }
+    &__links{
+        text-align: center;
+    }    
+}
+ul.list-inline {
+    text-align: center;
+}

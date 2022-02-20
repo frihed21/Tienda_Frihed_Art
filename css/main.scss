@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nunito:wght@300;400&family=Great+Vibes&family=Sacramento&family=Source+Sans+Pro:wght@400;600&display=swap");
+@font-face {
+  font-family: 'LOVE-YOU';
+  src: url("../fuente/loveyou.otf");
+  font-family: 'abyssopelagic';
+  src: url("../fuente/abyssopelagic.otf");
+}
+@import "./parciales/reset";
+@import "./parciales/componentes";
+@import "./parciales/header";
+@import "./parciales/hero";
+@import "./parciales/footer";
+@import "./parciales/responsive";
