@@ -18,6 +18,9 @@
     ul.navbar-nav.fs-5 {
         gap: 20px;
     }
+    .main__span{        
+        font-size: 4rem;
+    }
     
 }
 
@@ -61,7 +64,7 @@
     .grillado{
       grid-template-columns: 1fr; }
 
-      .line-effect::after, .line-effect::before{
+    .line-effect::after, .line-effect::before{
         margin-top: 10px;
         width: 80px;
     }
@@ -70,6 +73,9 @@
     }    
     .line-effect::after{
         right: 10px;
-    }  
+    } 
+    span.main__span {
+        font-size: 2rem;
+    }      
 }
 

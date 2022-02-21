@@ -196,7 +196,6 @@ div#navbarSupportedContent {
 
 .main__span {
   position: relative;
-  font-size: 4rem;
   font-family: "Shizuru", cursive; }
 
 .main__span span {
@@ -258,7 +257,9 @@ div#navbarSupportedContent {
   ul.navbar-nav {
     gap: 30px; }
   ul.navbar-nav.fs-5 {
-    gap: 20px; } }
+    gap: 20px; }
+  .main__span {
+    font-size: 4rem; } }
 
 @media screen and (max-width: 768px) {
   .line-effect::after, .line-effect::before {
@@ -291,4 +292,6 @@ div#navbarSupportedContent {
   .line-effect::before {
     left: 10px; }
   .line-effect::after {
-    right: 10px; } }
+    right: 10px; }
+  .main__span {
+    font-size: 1rem; } }
