@@ -1,5 +1,294 @@
-h1 {
-  color: red; }
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Nunito:wght@300;400&family=Great+Vibes&family=Sacramento&family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Shizuru&family=Nunito:wght@300;400&display=swap");
+@font-face {
+  font-family: 'LOVE-YOU';
+  src: url("../fuente/loveyou.otf");
+  font-family: 'abyssopelagic';
+  src: url("../fuente/abyssopelagic.otf"); }
 
-h2 {
-  color: black; }
+@font-face {
+  font-family: 'abyssopelagic';
+  src: url("../fuente/abyssopelagic.otf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+#navtop {
+  border-top: #ae905c 1px solid; }
+
+.navtop--others {
+  border-bottom: #ae905c 1px solid; }
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0.fs-4 {
+  gap: 20px; }
+
+.div__flexbox {
+  align-self: center; }
+
+.btn-outline-success {
+  color: white;
+  background-color: #ae905c;
+  border-color: #ae905c; }
+
+.btn-outline-success:hover {
+  color: #ae905c;
+  background-color: white;
+  border-color: #ae905c; }
+
+.nav-link {
+  color: #ae905c; }
+
+.dropdown-item {
+  color: #c2bdbd; }
+
+.col-md-3 > img {
+  width: 100%; }
+
+div#navbarSupportedContent {
+  justify-content: space-evenly; }
+
+.foo::after {
+  content: " *";
+  color: #303030;
+  font-weight: bold; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto; }
+  .header__anchorlogo {
+    text-decoration: none;
+    align-self: center; }
+  .header__name {
+    font-family: "Sacramento", cursive;
+    font-size: 4.5rem;
+    color: #ae905c;
+    /* animation-name: aparecer; */
+    animation-duration: 2s; }
+  .header__name {
+    text-align: -webkit-left;
+    padding-left: 20px; }
+  .header__imagelogo {
+    text-decoration: none; }
+  .header__imag {
+    width: 95px;
+    animation-name: aparecer;
+    animation-duration: 2s; }
+  .header__h3 {
+    padding: 10px;
+    letter-spacing: 0.3rem;
+    color: #ae905c;
+    animation-name: aparecer;
+    animation-duration: 2s; }
+  .header__separation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px 0 0; }
+  .header__svg {
+    width: 25px;
+    height: 29px;
+    color: #a8a7a7; }
+  .header__svg:hover {
+    color: #ae905c; }
+  .header__image {
+    width: 65px; }
+  .header__link--active {
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: #ae905c; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.img-carrusel {
+  height: 90vh;
+  object-fit: cover; }
+
+.section1-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.img__height {
+  height: 280px; }
+
+.grillado {
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: dense; }
+
+.grillado > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.vertical {
+  grid-row: span 2; }
+
+.grande {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.horizontal {
+  grid-column: span 2; }
+
+.line-container {
+  position: relative; }
+
+.line-effect {
+  display: inline-block;
+  color: #ae905c;
+  text-align: center; }
+  .line-effect::after, .line-effect::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    color: #ae905c;
+    background-color: currentColor;
+    margin-top: 15px; }
+  .line-effect::before {
+    left: 120px; }
+  .line-effect::after {
+    right: 120px; }
+
+.main__title {
+  font-size: 2.5rem;
+  text-align: center; }
+
+.main__box {
+  align-items: center; }
+
+.main__text {
+  font-size: 2rem;
+  padding: 15px;
+  border: #ae905c 1px solid; }
+
+.main__h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #ae905c; }
+
+.main__p {
+  text-align: center; }
+
+.main__image {
+  width: 100%; }
+
+.main__chicken {
+  margin-right: 10px;
+  width: 40px; }
+
+.main__span {
+  position: relative;
+  font-size: 4rem;
+  font-family: "Shizuru", cursive; }
+
+.main__span span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid black;
+  animation: maquina 5s infinite alternate steps(29); }
+
+@keyframes maquina {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+
+.footer {
+  letter-spacing: 0.1rem; }
+  .footer__title {
+    color: #ae905c;
+    font-size: 1.3rem; }
+  .footer__subtitle {
+    color: #978888;
+    font-weight: bold; }
+  .footer__text {
+    color: #818181; }
+  .footer__pagenetwork:hover {
+    color: #ae905c; }
+  .footer__li {
+    list-style: none; }
+  .footer__a {
+    text-decoration: none;
+    color: #818181; }
+  .footer__bg {
+    background-color: #eeeeee; }
+  .footer__last {
+    background-color: #303030; }
+  .footer__svg {
+    width: 2rem;
+    height: 2rem;
+    color: #ae905c; }
+    .footer__svg:hover {
+      color: white; }
+  .footer__links {
+    text-align: center; }
+  .footer ul.list-inline {
+    text-align: center; }
+  .footer__textlast {
+    font-size: 1.3rem;
+    text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .line-effect::after, .line-effect::before {
+    width: 360px; }
+  .line-effect::before {
+    left: 30px; }
+  .line-effect::after {
+    right: 30px; }
+  ul.navbar-nav {
+    gap: 30px; }
+  ul.navbar-nav.fs-5 {
+    gap: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .line-effect::after, .line-effect::before {
+    width: 260px; }
+  .line-effect::before {
+    left: 20px; }
+  .line-effect::after {
+    right: 20px; }
+  .d-flex {
+    width: 200px; } }
+
+@media screen and (max-width: 425px) {
+  .line-effect::after, .line-effect::before {
+    margin-top: 10px;
+    width: 120px; }
+  .line-effect::before {
+    left: 10px; }
+  .line-effect::after {
+    right: 10px; }
+  .header__separation {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (max-width: 375px) {
+  .grillado {
+    grid-template-columns: 1fr; }
+  .line-effect::after, .line-effect::before {
+    margin-top: 10px;
+    width: 80px; }
+  .line-effect::before {
+    left: 10px; }
+  .line-effect::after {
+    right: 10px; } }

@@ -1,4 +1,4 @@
-
+@import "./variables";
 .header{
     display: flex;
     flex-direction: column;
@@ -8,9 +8,9 @@
         align-self: center;
     }
     &__name{       
-        font-family: 'Sacramento', cursive;
+        font-family: $font_logo;
         font-size: 4.5rem;
-        color: #ae905c;
+        color: $color_general;
         /* animation-name: aparecer; */
         animation-duration: 2s;
     }
@@ -29,7 +29,7 @@
     &__h3{
         padding: 10px;
         letter-spacing: 0.3rem;
-        color: #ae905c;
+        color: $color_general;
         animation-name: aparecer;
         animation-duration: 2s;
     }
@@ -44,7 +44,7 @@
         color:#a8a7a7;
     }
     &__svg:hover{
-        color: #ae905c;
+        color: $color_general;
     }
     &__image{
         width: 65px;
@@ -53,7 +53,7 @@
         padding-bottom: 5px;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        color:#ae905c;
+        color:$color_general;
     }
 }
 

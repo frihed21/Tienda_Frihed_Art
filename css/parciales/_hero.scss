@@ -1,4 +1,4 @@
-
+@import "./variables";
 .img-carrusel{
     height: 90vh;
     object-fit: cover;
@@ -42,14 +42,14 @@
 }
     .line-effect{
         display: inline-block;
-        color: #ae905c;
+        color: $color_general;
         text-align: center;
         &::after, &::before{ 
             content: '';
             position: absolute;
             width: 300px;
             height: 1px;
-            color: #ae905c;
+            color: $color_general;
             background-color: currentColor;
             margin-top: 15px;
         }    
@@ -60,3 +60,53 @@
             right: 120px;
         }
     }    
+
+.main__title{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.main__box{
+  align-items: center;
+}
+.main__text{
+  font-size: 2rem; 
+  padding: 15px; 
+  border: #ae905c 1px solid;  
+}
+.main__h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #ae905c;
+}
+.main__p{
+  text-align: center;
+}
+.main__image{
+  width: 100%;
+}
+.main__chicken{
+  margin-right: 10px;
+  width: 40px;
+}
+.main__span{
+  position: relative;
+  font-size: 4rem;
+  font-family: $fontchicken;
+}
+.main__span span{
+  position: absolute;
+  right: 0;
+  width:0;
+  background: white;
+  border-left: 1px solid black;
+  animation: maquina 5s infinite alternate steps(29);
+  }
+  @keyframes maquina{
+  from{
+  width: 100%;
+  }
+  to{
+  width: 0;
+  }
+  }

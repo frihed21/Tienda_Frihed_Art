@@ -1,12 +1,10 @@
-
-
-
+@import "./variables";
 #navtop{
-    border-top: #ae905c 1px solid;
+    border-top: $borders;
     }
     
     .navtop--others{
-        border-bottom: #ae905c 1px solid;
+        border-bottom: $borders;
     }
     
     ul.navbar-nav.me-auto.mb-2.mb-lg-0.fs-4 {
@@ -22,18 +20,18 @@
     
     .btn-outline-success {
         color: white;
-        background-color: #ae905c;
-        border-color:#ae905c;
+        background-color: $color_general;
+        border-color:$color_general;
     }
     .btn-outline-success:hover {
-        color: #ae905c;
+        color: $color_general;
         background-color: white;
-        border-color:#ae905c;
+        border-color:$color_general;
     }   
     
     
     .nav-link {
-        color: #ae905c;
+        color: $color_general;
         }
     
     .dropdown-item{

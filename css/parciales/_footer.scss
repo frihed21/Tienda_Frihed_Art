@@ -1,7 +1,9 @@
+@import "./variables";
 .footer{
     letter-spacing: 0.1rem;    
     &__title{
-        color: #ae905c;
+        color: $color_general;
+        font-size: 1.3rem;
     }
     &__subtitle{
         color: #978888;
@@ -11,7 +13,7 @@
         color: #818181;
     }    
     &__pagenetwork:hover{
-       color: #ae905c;
+       color: $color_general;
     }
     &__li{
         list-style: none;
@@ -29,7 +31,7 @@
     &__svg{
         width: 2rem;
         height:2rem;
-        color: #ae905c;
+        color: $color_general;
         &:hover{
             color: white;
         }   
@@ -37,7 +39,12 @@
     &__links{
         text-align: center;
     }    
-}
-ul.list-inline {
-    text-align: center;
+    ul.list-inline {
+        text-align: center;
+    }
+    
+    &__textlast{
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
