@@ -290,6 +290,15 @@ div#navbarSupportedContent {
   width: 100%;
 }
 
+.main__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main__chicken {
   margin-right: 10px;
   width: 40px;
@@ -297,7 +306,6 @@ div#navbarSupportedContent {
 
 .main__span {
   position: relative;
-  font-size: 4rem;
   font-family: "Shizuru", cursive;
 }
 
@@ -407,6 +415,9 @@ div#navbarSupportedContent {
   ul.navbar-nav.fs-5 {
     gap: 20px;
   }
+  .main__span {
+    font-size: 3.2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -459,6 +470,15 @@ div#navbarSupportedContent {
   }
   .line-effect::after {
     right: 10px;
+  }
+  span.main__span {
+    font-size: 2rem;
+  }
+  .main__chicken {
+    width: 25px;
+  }
+  .main__span {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
