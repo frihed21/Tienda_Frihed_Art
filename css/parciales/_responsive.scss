@@ -1,6 +1,9 @@
 @import "./variables";
 
 @media screen and (min-width:1024px){
+    .grillado__imagenes{
+        margin: 20px 30px;        
+    }
     .line-effect::after, .line-effect::before{
         width: 360px;
     }
@@ -25,11 +28,14 @@
 }
 
   @media screen and (max-width:768px){
+    .grillado__imagenes{
+        margin: 20px 30px;        
+    }
     .line-effect::after, .line-effect::before{
-        width: 260px;
+        width: 250px;
     }
     .line-effect::before{
-        left: 20px;
+        left: 30px;
     }
     
     .line-effect::after{
@@ -41,7 +47,11 @@
     }
 }
 
-@media screen and ( max-width: 425px){
+@media screen and (max-width: 425px){
+    .grillado__imagenes{
+        margin-top: 10px;
+        grid-template-columns: 1fr; }
+
     .line-effect::after, .line-effect::before{
         margin-top: 10px;
         width: 120px;
@@ -61,8 +71,9 @@
 }
 
 @media screen and (max-width: 375px){
-    .grillado{
-      grid-template-columns: 1fr; }
+    .grillado__imagenes{
+        margin-top: 10px;
+        grid-template-columns: 1fr; }
 
     .line-effect::after, .line-effect::before{
         margin-top: 10px;

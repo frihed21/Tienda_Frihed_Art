@@ -1,65 +1,100 @@
 @import "./variables";
-.img-carrusel{
+.img-carrusel {
     height: 90vh;
     object-fit: cover;
 }
 
 .section1-img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-  }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.img__height{
-      height: 280px;
-  }
+.img__height {
+    height: 280px;
+}
  
-.grillado{
-    display: grid; 
-    gap: 0.2rem; 
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-    grid-template-rows: auto; 
-    grid-auto-flow: dense; 
-}    
-    .grillado > div > img {
-      width: 100%; 
-      height: 100%; 
-      object-fit: cover; 
-    }    
-    .vertical{
-      grid-row: span 2; 
-    }    
-    .grande {
-      grid-column: span 2; 
-      grid-row: span 2; 
-    }    
-    .horizontal{
-      grid-column: span 2; 
-    }
+.grillado__imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+}
+.grillado__imagenes > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.line-container{
+.grillado__imagenes .vertical{
+  position: relative;
+}
+
+.grillado__imagenes .horizontal{
+  position: relative;
+}
+.vertical {
+    grid-row: span 2;
+}
+.horizontal {
+    grid-column: span 1;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.507);
+  width: 100%;
+  height: 100%;
+  transition: .5 ease;
+  overflow: hidden;
+}
+
+.overlayv{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.507);
+  width: 100%;
+  height: 100%;
+  transition: .5 ease;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.line-container {
     position: relative;
 }
-    .line-effect{
-        display: inline-block;
+.line-effect {
+    display: inline-block;
+    color: $color_general;
+    text-align: center;
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 1px;
         color: $color_general;
-        text-align: center;
-        &::after, &::before{ 
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 1px;
-            color: $color_general;
-            background-color: currentColor;
-            margin-top: 15px;
-        }    
-        &::before{
-            left: 120px;
-        }        
-        &::after{
-            right: 120px;
-        }
-    }    
+        background-color: currentColor;
+        margin-top: 15px;
+    }
+    &::before {
+        left: 120px;
+    }
+    &::after {
+        right: 120px;
+    }
+}
 
 .main__title{
   font-size: 2.5rem;
@@ -113,3 +148,5 @@
   width: 0;
   }
   }
+
+

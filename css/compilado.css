@@ -124,27 +124,48 @@ div#navbarSupportedContent {
 .img__height {
   height: 280px; }
 
-.grillado {
+.grillado__imagenes {
   display: grid;
-  gap: 0.2rem;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-auto-flow: dense; }
 
-.grillado > div > img {
+.grillado__imagenes > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
+.grillado__imagenes .vertical {
+  position: relative; }
+
+.grillado__imagenes .horizontal {
+  position: relative; }
+
 .vertical {
   grid-row: span 2; }
 
-.grande {
-  grid-column: span 2;
-  grid-row: span 2; }
-
 .horizontal {
-  grid-column: span 2; }
+  grid-column: span 1; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.507);
+  width: 100%;
+  height: 100%;
+  transition: .5 ease;
+  overflow: hidden; }
+
+.overlayv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.507);
+  width: 100%;
+  height: 100%;
+  transition: .5 ease;
+  overflow: hidden; }
 
 .line-container {
   position: relative; }
@@ -252,6 +273,8 @@ div#navbarSupportedContent {
     text-align: center; }
 
 @media screen and (min-width: 1024px) {
+  .grillado__imagenes {
+    margin: 20px 30px; }
   .line-effect::after, .line-effect::before {
     width: 360px; }
   .line-effect::before {
@@ -266,16 +289,21 @@ div#navbarSupportedContent {
     font-size: 3.2rem; } }
 
 @media screen and (max-width: 768px) {
+  .grillado__imagenes {
+    margin: 20px 30px; }
   .line-effect::after, .line-effect::before {
-    width: 260px; }
+    width: 250px; }
   .line-effect::before {
-    left: 20px; }
+    left: 30px; }
   .line-effect::after {
     right: 20px; }
   .d-flex {
     width: 200px; } }
 
 @media screen and (max-width: 425px) {
+  .grillado__imagenes {
+    margin-top: 10px;
+    grid-template-columns: 1fr; }
   .line-effect::after, .line-effect::before {
     margin-top: 10px;
     width: 120px; }
@@ -288,7 +316,8 @@ div#navbarSupportedContent {
     justify-content: center; } }
 
 @media screen and (max-width: 375px) {
-  .grillado {
+  .grillado__imagenes {
+    margin-top: 10px;
     grid-template-columns: 1fr; }
   .line-effect::after, .line-effect::before {
     margin-top: 10px;
@@ -303,4 +332,3 @@ div#navbarSupportedContent {
     width: 25px; }
   .main__span {
     font-size: 2rem; } }
-  
