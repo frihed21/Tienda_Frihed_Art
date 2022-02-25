@@ -42,9 +42,10 @@
     
             <nav id="navtop" class="navbar navbar-expand-lg navbar-light bg-white navtop--others">
                 <div  class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img class= "header__image" src="../img/logo.svg" alt="logo">
-                    </a>
+                    <form class="navbar-nav d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -90,33 +91,60 @@
                                 <li class="nav-item">
                                     <a class="nav-link foo" href="#"><i class="menu_icon fa-moon-o fa" style="color: #303030;"></i>  FESTIVIDADES</a>
                                 </li>                        
-                            </ul>
-                        <form class="navbar-nav d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                            </ul>                        
                     </div>
                 </div>
               </nav>
         </header>
 
         <main>
-            <section class="container mt-5">
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <h2>titular 1</h2>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>titular 2</h2>
-                        <p>Assumenda, voluptate.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>titular 3</h2>
-                        <p>Perferendis, placeat.</p>
-                    </div>
-                </div>
+            <section class="container mt-5 contact">
+                <h1 class="text-center">Contacto</h1>
+                    <h2 class="contact__h2">¿Deseas alguno de los productos o uno personalizado? Déjame tus datos y me contactare contigo a la brevedad</h2>
+                        <div class="row mt-5">
+                            <div class="col-md-8">
+                                <form class="form" action="" method="get" enctype="text/plain">
+                                    <fieldset>
+                                        <legend>Datos Personales</legend>
+                                             <label for="idsex">Sexo:</label>                 
+                                             <input type="radio" name="camposex" id="idsex" value ="masculino" required>Hombre
+                                             <input type="radio" name="camposex" id="idsex" value ="femenino" required>Mujer
+                                        <div>
+                                            <label for="idname">Nombre:</label>
+                                            <input type="text" name="" id="idname" placeholder="Ingrese su nombre" required>
+                                        </div> 
+                                        <div>
+                                            <label for="idemail">E-mail:</label>
+                                            <input type="email" name="" id="idemail" placeholder="Ingrese su email" required>
+                                        </div>
+                                        <div>
+                                            <label for="idcelular">Celular:</label>
+                                            <input type="number" name="" id="" placeholder="Ingrese su nro. celular" required>
+                                        </div>               
+                                        <div>
+                                            <label for="idmensaje">Mensaje:</label>
+                                            <textarea name="" id="idmensaje" cols="30" rows="10" placeholder="Ingrese su consulta o duda sobre los productos" required></textarea>
+                                        </div>
+                                        <div>                
+                                            <input type="checkbox" name="campocondition" id="idcondition" required>
+                                            <label for="idcondition">Términos y Condiciones.</label>                
+                                        </div>
+                                    </fieldset> 
+                                     <input type="submit" value="Enviar"> 
+                                     <input type="reset" value="Borrar datos">      
+                                </form>  
+                            </div>
+                            <div class="col-md-4 contact__img">
+                                <img src="../img/welcome.jpg" alt="welcome">
+                                <img src="../img/hello.jpg" alt="hello">
+                                <img src="../img/thankyou.jpg" alt="thankyou">
+                            </div>                       
+                        </div>
             </section>
+
+               
+                         
+
         </main>
 
         <footer class="footer">

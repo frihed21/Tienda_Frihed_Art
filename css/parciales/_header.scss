@@ -48,9 +48,9 @@
     }
     &__image{
         width: 65px;
-    }
+    }    
     &__link--active{  
-        padding-bottom: 5px;
+        padding-bottom: 3px;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         color:$color_general;
@@ -62,7 +62,17 @@
     100%{opacity: 1;}
     }
 
+a.nav-link {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+}
 
-    
+.navbar-collapse{
+    text-align: center;
+}
+
+.dropdown-menu a{
+    text-align: center;
+}
         
     

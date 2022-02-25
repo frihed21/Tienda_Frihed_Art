@@ -17,17 +17,15 @@
     }
 
     ul.navbar-nav{
-        gap:30px;
+        gap:25px;
     }   
-    ul.navbar-nav.fs-5 {
-        gap: 20px;
-    }
+    
     .main__span{
         font-size: 3.2rem;
     }
 }
 
-  @media screen and (max-width:768px){
+  @media screen and (min-width:768px){
     .grillado__imagenes{
         margin: 20px 30px;        
     }
@@ -68,6 +66,10 @@
         display: flex;
         justify-content: center;
     }
+
+    .img__height {
+        height: 330px;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -93,6 +95,11 @@
       }
       .main__span{
         font-size: 2rem;
-    }   
+    }  
+    .contact__img img{
+        width: 32%;
+        height: 100%;
+        object-fit: cover;
+      } 
 }
 

@@ -11,9 +11,29 @@
 }
 
 .img__height {
-    height: 280px;
+    height: 230px;
+    object-fit: cover;
 }
  
+a.navbar-brand {
+  font-size: 1.5rem;
+  color: #ae905c;
+  font-weight:bolder;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.nav-products:hover{
+  color: #3e3e3e;
+  font-weight: bolder;
+}
+
+h1.text-center {
+  margin: 30px 0;
+  color: #ae905c;
+  font-weight: bolder;
+}
+
 .grillado__imagenes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,17 +56,28 @@
 .vertical {
     grid-row: span 2;
 }
+
+.vertical:hover .overlayv{
+  height: 100%;
+  cursor: pointer;
+}
+
 .horizontal {
-    grid-column: span 1;
+    grid-column: span 1;  
+}
+
+.horizontal:hover .overlay{
+  height: 100%;
+  cursor: pointer;
 }
 
 .overlay{
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.507);
+  background: rgba(255, 255, 255, 0.904);
   width: 100%;
-  height: 100%;
+  height: 0;
   transition: .5 ease;
   overflow: hidden;
 }
@@ -55,15 +86,59 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.507);
+  background: rgba(0, 0, 0, 0.904);
   width: 100%;
-  height: 100%;
+  height: 0;
   transition: .5 ease;
   overflow: hidden;
 }
 
+.overlayv__words{
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.overlayv a{
+  text-decoration:none;
+  color: #ae905c;
+  font-size: 1.5rem;  
+  padding-bottom: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-transform: uppercase;
+}
 
+.overlayv h2{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.overlay__words{
+  color: #000;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.overlay a{
+  text-decoration:none;
+  color: #ae905c;
+  font-size: 1.5rem;      
+  padding-bottom: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-transform: uppercase;
+}
 
+.overlay h2{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
 
 
 
@@ -149,4 +224,19 @@
   }
   }
 
-
+  .contact{
+    font-size: 1.5rem;
+      &__img img{
+        vertical-align: sub;
+        width: 80%;
+        height: 30%;
+        object-fit: cover;
+     }
+      &__h2{       
+       text-align: center;
+       align-items: center;
+     }
+  }
+  .form {
+    text-align: center;
+}
