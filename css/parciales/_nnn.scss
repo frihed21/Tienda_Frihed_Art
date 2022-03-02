@@ -1,0 +1,105 @@
+@import "./variables";
+
+@media screen and (min-width:1024px){
+    .grillado__imagenes{
+        margin: 20px 30px;        
+    }
+    .line-effect::after, .line-effect::before{
+        width: 360px;
+    }
+
+    .line-effect::before{
+        left: 30px;
+    }
+    
+    .line-effect::after{
+        right: 30px;
+    }
+
+    ul.navbar-nav{
+        gap:25px;
+    }   
+    
+    .main__span{
+        font-size: 3.2rem;
+    }
+}
+
+  @media screen and (min-width:768px){
+    .grillado__imagenes{
+        margin: 20px 30px;        
+    }
+    .line-effect::after, .line-effect::before{
+        width: 250px;
+    }
+    .line-effect::before{
+        left: 30px;
+    }
+    
+    .line-effect::after{
+        right: 20px;
+    }
+
+    .d-flex{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .grillado__imagenes{
+        margin-top: 10px;
+        grid-template-columns: 1fr; }
+
+    .line-effect::after, .line-effect::before{
+        margin-top: 10px;
+        width: 120px;
+    }
+    .line-effect::before{
+        left: 10px;
+    }
+    
+    .line-effect::after{
+        right: 10px;
+    }
+
+    .header__separation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img__height {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .grillado__imagenes{
+        margin-top: 10px;
+        grid-template-columns: 1fr; }
+
+    .line-effect::after, .line-effect::before{
+        margin-top: 10px;
+        width: 80px;
+    }
+    .line-effect::before{
+        left: 10px;
+    }    
+    .line-effect::after{
+        right: 10px;
+    } 
+    span.main__span {
+        font-size: 2rem;
+    }   
+    .main__chicken{
+        width: 25px;
+      }
+      .main__span{
+        font-size: 2rem;
+    }  
+    .contact__img img{
+        width: 32%;
+        height: 100%;
+        object-fit: cover;
+      } 
+}
+

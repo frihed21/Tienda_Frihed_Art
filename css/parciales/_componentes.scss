@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./responsive";
+
 #navtop{
     border-top: $borders;
     }
@@ -7,29 +9,29 @@
         border-bottom: $borders;
     }
     
-    ul.navbar-nav.me-auto.mb-2.mb-lg-0.fs-4 {
-        
-        gap: 20px;
-    }
+    ul.navbar-nav.fs-5 {            
+        gap: 0px;   
+        @include laptop{
+            gap:25px;
+        }
+    }  
     
     .div__flexbox{
         align-self: center;
     }
-    
-    
-    
+        
     .btn-outline-success {
         color: white;
         background-color: $color_general;
         border-color:$color_general;
     }
+
     .btn-outline-success:hover {
         color: $color_general;
         background-color: white;
         border-color:$color_general;
     }   
-    
-    
+        
     .nav-link {
         color: $color_general;
         }

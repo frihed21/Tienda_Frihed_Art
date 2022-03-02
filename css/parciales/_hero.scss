@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./responsive";
+
 .img-carrusel {
     height: 90vh;
     object-fit: cover;
@@ -13,6 +15,9 @@
 .img__height {
     height: 230px;
     object-fit: cover;
+    @include movilL{
+      height: 330px;
+    }
 }
  
 a.navbar-brand {
@@ -39,7 +44,22 @@ h1.text-center {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-flow: dense;
+      @include movilM{
+        margin-top: 10px;
+        grid-template-columns: 1fr; 
+    }
+    @include movilL{
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+    }
+    @include tablet{
+      margin: 20px 30px;     
+    }
+    @include laptop{
+      margin: 20px 30px; 
+    }
 }
+
 .grillado__imagenes > div > img {
     width: 100%;
     height: 100%;
@@ -140,35 +160,8 @@ h1.text-center {
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
 .line-container {
     position: relative;
-}
-.line-effect {
-    display: inline-block;
-    color: $color_general;
-    text-align: center;
-    &::after,
-    &::before {
-        content: '';
-        position: absolute;
-        width: 300px;
-        height: 1px;
-        color: $color_general;
-        background-color: currentColor;
-        margin-top: 15px;
-    }
-    &::before {
-        left: 120px;
-    }
-    &::after {
-        right: 120px;
-    }
 }
 
 .main__title{
@@ -202,11 +195,21 @@ h1.text-center {
 .main__chicken{
   margin-right: 10px;
   width: 40px;
+  @include movilM{
+    width: 25px;
+  }
 }
 .main__span{
   position: relative;
   font-family: $fontchicken;
+  @include movilM{
+    font-size: 2rem;
+  }
+  @include laptop{
+    font-size: 3.2rem;
+  }
 }
+
 .main__span span{
   position: absolute;  
   right: 0;
@@ -214,7 +217,11 @@ h1.text-center {
   background: white;
   border-left: 1px solid black;
   animation: maquina 5s infinite alternate steps(29);
+    @include movilM{
+      font-size: 2rem;
+    }
   }
+
   @keyframes maquina{
   from{
   width: 100%;
@@ -231,6 +238,11 @@ h1.text-center {
         width: 80%;
         height: 30%;
         object-fit: cover;
+        @include movilM{
+          width: 32%;
+          height: 100%;
+          object-fit: cover;
+        }
      }
       &__h2{       
        text-align: center;

@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./responsive";
+
 .header{
     display: flex;
     flex-direction: column;
@@ -35,8 +37,12 @@
     }
     &__separation {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-end;        
         padding: 10px 30px 0 0;
+        @include movilL{
+            display: flex;
+            justify-content: center;
+        }
     }
     &__svg{
         width: 25px;
@@ -57,6 +63,7 @@
     }
 }
 
+   
 @keyframes aparecer{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -74,5 +81,11 @@ a.nav-link {
 .dropdown-menu a{
     text-align: center;
 }
-        
+
+.d-flex{
+    @include tablet{
+        width: 200px;
+    }
+   
+}      
     
