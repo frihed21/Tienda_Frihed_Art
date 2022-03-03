@@ -9,7 +9,7 @@
         <title>Frihed Art</title>
         <link rel="shortcut icon" href="../img/logo_frihedart.ico" type="image/x-icon">    
         <script src="https://kit.fontawesome.com/fb50aa8998.js" crossorigin="anonymous"></script>        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
         <link rel="stylesheet" href="../css/main.css">
     </head>       
     <body>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-4 mb-col-lg-2 mb-3">
                         <div class="header__separation">
-                            <a href="../cuenta/micuenta.html">
+                            <a href="../pages/micuenta.html">
                                 <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
                             </a>
                             <a href="#">
@@ -50,21 +50,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse me-auto collapse show mt-2" id="navbarSupportedContent">
-                             <ul class="navbar-nav fs-5">
+                        <ul class="navbar-nav fs-5">
                                 <li class="nav-item">
                                     <a class="nav-link" href="../index.html">INICIO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../nosotros/nosotros.html">BIO</a>
+                                    <a class="nav-link" href="../pages/nosotros.html">BIO</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle header__link--active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     PINTURAS
                                     </a>
                                     <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../pinturas/acuarelas.html">ACUARELAS</a></li>
-                                        <li><a class="dropdown-item" href="../pinturas/acrilicos.html">ACRÍLICOS</a></li>
-                                        <li><a class="dropdown-item" href="../pinturas/digital.html">DIGITAL</a></li>
+                                        <li><a class="dropdown-item" href="../pages/acuarelas.html">ACUARELAS</a></li>
+                                        <li><a class="dropdown-item" href="../pages/acrilicos.html">ACRÍLICOS</a></li>
+                                        <li><a class="dropdown-item" href="../pages/digital.html">DIGITAL</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -72,8 +72,8 @@
                                     PAPELERÍA
                                     </a>
                                     <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../papeleria/cuadernos.html">CUADERNOS</a></li>
-                                        <li><a class="dropdown-item" href="../papeleria/greetingcard.html">GREETING CARDS</a></li>
+                                        <li><a class="dropdown-item" href="../pages/cuadernos.html">CUADERNOS</a></li>
+                                        <li><a class="dropdown-item" href="../pages/greetingcard.html">GREETING CARDS</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -81,72 +81,116 @@
                                     CROCHET
                                     </a>
                                     <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../crochet/amigurumis.html">AMIGURUMIS</a></li>
-                                        <li><a class="dropdown-item" href="../crochet/ropa.html">ROPA</a></li>
+                                        <li><a class="dropdown-item" href="../pages/amigurumis.html">AMIGURUMIS</a></li>
+                                        <li><a class="dropdown-item" href="../pages/ropa.html">ROPA</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link header__link--active" href="../contacto/contacto.html">CONTACTO</a>
+                                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link foo" href="#"><i class="menu_icon fa-moon-o fa" style="color: #303030;"></i>  FESTIVIDADES</a>
                                 </li>                        
-                            </ul>                        
+                            </ul>                       
                     </div>
                 </div>
               </nav>
         </header>
 
         <main>
-            <section class="container mt-5 contact">
-                <h1 class="text-center">Contacto</h1>
-                    <h2 class="contact__h2">¿Deseas alguno de los productos o uno personalizado? Déjame tus datos y me contactare contigo a la brevedad</h2>
-                        <div class="row mt-5">
-                            <div class="col-md-8">
-                                <form class="form" action="" method="get" enctype="text/plain">
-                                    <fieldset>
-                                        <legend>Datos Personales</legend>
-                                             <label for="idsex">Sexo:</label>                 
-                                             <input type="radio" name="camposex" id="idsex" value ="masculino" required>Hombre
-                                             <input type="radio" name="camposex" id="idsex" value ="femenino" required>Mujer
-                                        <div>
-                                            <label for="idname">Nombre:</label>
-                                            <input type="text" name="" id="idname" placeholder="Ingrese su nombre" required>
-                                        </div> 
-                                        <div>
-                                            <label for="idemail">E-mail:</label>
-                                            <input type="email" name="" id="idemail" placeholder="Ingrese su email" required>
-                                        </div>
-                                        <div>
-                                            <label for="idcelular">Celular:</label>
-                                            <input type="number" name="" id="" placeholder="Ingrese su nro. celular" required>
-                                        </div>               
-                                        <div>
-                                            <label for="idmensaje">Mensaje:</label>
-                                            <textarea name="" id="idmensaje" cols="30" rows="10" placeholder="Ingrese su consulta o duda sobre los productos" required></textarea>
-                                        </div>
-                                        <div>                
-                                            <input type="checkbox" name="campocondition" id="idcondition" required>
-                                            <label for="idcondition">Términos y Condiciones.</label>                
-                                        </div>
-                                    </fieldset> 
-                                     <input type="submit" value="Enviar"> 
-                                     <input type="reset" value="Borrar datos">      
-                                </form>  
+            <div>
+                <h1  class="text-center">ACUARELAS</h1>                
+            </div>
+           
+            <section class="container-fluid mt-5">
+                <div class="row mt-5">
+                    <div class="col-md-2">
+                        <nav id="navbar-example3" class="navbar flex-column align-items-stretch p-3">
+                            <a class="navbar-brand" href="#">FORMATO</a>
+                                <nav class="nav nav-pills flex-column mb-4">
+                                    <a class="nav-link nav-products" href="#item-1">Horizontal (Sala/Comedor)</a>                                            
+                                    <a class="nav-link nav-products" href="#item-2">Vertical</a>
+                                </nav>
+                            <a class="navbar-brand" href="#">TIPOS</a>
+                                <nav class="nav nav-pills flex-column mb-4">
+                                    <a class="nav-link nav-products" href="#item-1">Naturaleza</a>                                            
+                                    <a class="nav-link nav-products" href="#item-1">Surrealista</a>  
+                                    <a class="nav-link nav-products" href="#item-1">Abstractos</a>  
+                                    <a class="nav-link nav-products" href="#item-1">Animales</a>  
+                                    <a class="nav-link nav-products" href="#item-1">Humanos</a>  
+                                    <a class="nav-link nav-products" href="#item-1">Personajes ficción</a>  
+                                </nav>
+                            <a class="navbar-brand" href="#">MEDIDAS</a>
+                                <nav class="nav nav-pills flex-column mb-4">
+                                    <a class="nav-link nav-products" href="#item-1">A2</a>                                            
+                                    <a class="nav-link nav-products" href="#item-1">A3</a>  
+                                    <a class="nav-link nav-products" href="#item-1">A4</a>  
+                                    <a class="nav-link nav-products" href="#item-1">15x15cm</a>  
+                                    <a class="nav-link nav-products" href="#item-1">30x20cm</a>  
+                                    <a class="nav-link nav-products" href="#item-1">50x20cm</a>  
+                                    <a class="nav-link nav-products" href="#item-1">40x50cm</a>  
+                                    <a class="nav-link nav-products" href="#item-1">55x65cm</a>  
+                                </nav>       
+                        </nav>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row justify-content-evenly">
+                            <div class="col-md-3">
+                                <img src="../img/aqua1.jpg" alt="">
+                                <h2>titular 1</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
                             </div>
-                            <div class="col-md-4 contact__img">
-                                <img src="../img/welcome.jpg" alt="welcome">
-                                <img src="../img/hello.jpg" alt="hello">
-                                <img src="../img/thankyou.jpg" alt="thankyou">
-                            </div>                       
+                            <div class="col-md-3">
+                                <img src="../img/aqua2.jpg" alt="">
+                                <h2>titular 2</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                            </div>
+                            <div class="col-md-3">
+                                <img src="../img/aqua4.jpg" alt="">
+                                <h2>titular 3</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                            </div>
                         </div>
+
+                        <div class="row justify-content-evenly mt-5">
+                            <div class="col-md-3">
+                                <img src="../img/aqua4.jpg" alt="">
+                                <h2>titular 1</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                            </div>
+                            <div class="col-md-3">
+                                <img src="../img/aqua1.jpg" alt="">
+                                <h2>titular 2</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                            </div>
+                            <div class="col-md-3">
+                                <img src="../img/aqua2.jpg" alt="">
+                                <h2>titular 3</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-evenly mt-5">
+                            <div class="col-md-3" >
+                                <img class="img__height" src="../img/aqua5.jpg" alt="">
+                                <h2>titular 1</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img__height" src="../img/aqua8.jpg" alt="">
+                                <h2>titular 2</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>                        
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img__height" src="../img/aqua9.jpg" alt="">
+                                <h2>titular 3</h2>
+                                <button type="button" class="btn btn-primary"> VER PRODUCTO</button>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>    
             </section>
-
-               
-                         
-
         </main>
-
         <footer class="footer">
             <div class="pt-5 fs-5 footer__bg">
                 <div class="container">
@@ -197,9 +241,9 @@
                         <div class="col-md-3 mb-3 mb-lg-0">
                             <h3 class="fw-bold mb-3 footer__title">LINKS RÁPIDOS</h3>
                             <ul class="footer__ul">
-                                <li class="footer__li"><a class="footer__a" href="../nosotros/nosotros.html">Biografía</a></li>
-                                <li class="footer__li"><a class="footer__a" href="../preguntas/preguntas.html">Preguntas</a></li>
-                                <li class="footer__li"><a class="footer__a" href="../contacto/contacto.html">Contacto</a></li>
+                                <li class="footer__li"><a class="footer__a" href="../pages/nosotros.html">Biografía</a></li>
+                                <li class="footer__li"><a class="footer__a" href="../pages/preguntas.html">Preguntas</a></li>
+                                <li class="footer__li"><a class="footer__a" href="../pages/contacto.html">Contacto</a></li>
                             </ul>
                         </div>
     
@@ -247,8 +291,8 @@
             <div class="footer__last p-2">
                 <p class="footer__text footer__textlast" >Todos los derechos reservados. Lima - Perú <br> Diseñado por Katerin Hinostroza® </p>
             </div>   
-        </footer>
+        </footer>        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+        
     </body>
 </html>

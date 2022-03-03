@@ -107,7 +107,6 @@ div#navbarSupportedContent {
   font-family: "Sacramento", cursive;
   font-size: 4.5rem;
   color: #ae905c;
-  /* animation-name: aparecer; */
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -328,12 +327,12 @@ h1.text-center {
   grid-column: span 1;
 }
 
-.horizontal:hover .overlay {
+.horizontal:hover .overlay, .horizontal:hover .overlayv {
   height: 100%;
   cursor: pointer;
 }
 
-.overlay {
+.overlay, .overlayv {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -346,15 +345,7 @@ h1.text-center {
 }
 
 .overlayv {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.904);
-  width: 100%;
-  height: 0;
-  -webkit-transition: .5 ease;
-  transition: .5 ease;
-  overflow: hidden;
 }
 
 .overlayv__words {
@@ -368,33 +359,11 @@ h1.text-center {
           transform: translate(-50%, -50%);
 }
 
-.overlayv a {
-  text-decoration: none;
-  color: #ae905c;
-  font-size: 1.5rem;
-  padding-bottom: 2px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  text-transform: uppercase;
-}
-
-.overlayv h2 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-}
-
 .overlay__words {
   color: #000;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
-.overlay a {
+.overlayv a, .overlay a, .overlayv a {
   text-decoration: none;
   color: #ae905c;
   font-size: 1.5rem;
@@ -404,7 +373,7 @@ h1.text-center {
   text-transform: uppercase;
 }
 
-.overlay h2 {
+.overlayv h2, .overlay h2, .overlayv h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
 }
