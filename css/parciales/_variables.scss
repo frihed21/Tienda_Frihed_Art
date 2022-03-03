@@ -1,4 +1,15 @@
-$color_general:#ae905c;
+// $color_general:#ae905c;
 $font_logo: 'Sacramento',cursive;
 $borders: #ae905c 1px solid;
 $fontchicken: 'Shizuru', cursive;
+
+$palette:(
+    'c_first': #ae905c,
+    'c_second': #303030,
+    'c_shop_ul': #a8a7a7,
+    'c_light': #fff,
+    'c_dark': #000,
+    'c_footsub_tit': #978888,
+    'c_foottext': #818181,
+    'c_footfirstbg': #eeeeee,
+)

@@ -12,7 +12,7 @@
     &__name{       
         font-family: $font_logo;
         font-size: 4.5rem;
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
         animation-duration: 2s;
     }
     &__name {
@@ -30,7 +30,7 @@
     &__h3{
         padding: 10px;
         letter-spacing: 0.3rem;
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
         animation-name: aparecer;
         animation-duration: 2s;
     }
@@ -46,10 +46,10 @@
     &__svg{
         width: 25px;
         height: 29px;
-        color:#a8a7a7;
+        color:map-get($map: $palette, $key: 'c_shop_ul');
     }
     &__svg:hover{
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
     }
     &__image{
         width: 65px;
@@ -58,7 +58,7 @@
         padding-bottom: 3px;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        color:$color_general;
+        color: map-get($map: $palette, $key: 'c_first');
     }
 }
 

@@ -29,7 +29,7 @@ a.navbar-brand {
 }
 
 .nav-products:hover{
-  color: #3e3e3e;
+  color: map-get($map: $palette, $key: 'c_second');
   font-weight: bolder;
 }
 
@@ -48,14 +48,14 @@ h1.text-center {
         margin-top: 10px;
         grid-template-columns: 1fr; 
     }
-    @include movilL{
+      @include movilL{
         margin-top: 10px;
         grid-template-columns: 1fr;
     }
-    @include tablet{
+      @include tablet{
       margin: 20px 30px;     
     }
-    @include laptop{
+      @include laptop{
       margin: 20px 30px; 
     }
 }
@@ -109,7 +109,7 @@ h1.text-center {
 }
 
 .overlayv__words{
-  color: #fff;
+  color: map-get($map: $palette, $key: 'c_light');
   font-size: 3rem;
   position: absolute;
   top: 50%;
@@ -119,8 +119,8 @@ h1.text-center {
 }
 
 .overlay__words{
-  @extend .overlay__words;
-  color: #000;  
+  @extend .overlayv__words;
+  color: map-get($map: $palette, $key: 'c_dark');  
 }
 
 .overlayv a, .overlay a{
@@ -192,8 +192,8 @@ h1.text-center {
   position: absolute;  
   right: 0;
   width:0;
-  background: white;
-  border-left: 1px solid black;
+  background: map-get($map: $palette, $key: 'c_light');
+  border-left: 1px solid #000;
   animation: maquina 5s infinite alternate steps(29);
     @include movilM{
       font-size: 2rem;

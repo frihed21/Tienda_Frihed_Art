@@ -2,36 +2,36 @@
 .footer{
     letter-spacing: 0.1rem;    
     &__title{
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
         font-size: 1.3rem;
     }
     &__subtitle{
-        color: #978888;
+        color: map-get($map: $palette, $key: 'c_footsub_tit');
         font-weight: bold;
     }
     &__text{
-        color: #818181;
+        color: map-get($map: $palette, $key: 'c_foottext');
     }    
     &__pagenetwork:hover{
-       color: $color_general;
+       color: map-get($map: $palette, $key: 'c_first');
     }
     &__li{
         list-style: none;
     }
     &__a{
         text-decoration: none;
-        color: #818181;
+        color: map-get($map: $palette, $key: 'c_foottext');
     }
     &__bg{
-        background-color: #eeeeee;
+        background-color: map-get($map: $palette, $key: 'c_footfirstbg');
     }
     &__last{
-        background-color:#303030;
+        background-color:map-get($map: $palette, $key: 'c_second');
     }    
     &__svg{
         width: 2rem;
         height:2rem;
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
         &:hover{
             color: white;
         }   

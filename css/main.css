@@ -50,14 +50,14 @@ ul.navbar-nav.fs-5 {
 }
 
 .btn-outline-success {
-  color: white;
+  color: #fff;
   background-color: #ae905c;
   border-color: #ae905c;
 }
 
 .btn-outline-success:hover {
   color: #ae905c;
-  background-color: white;
+  background-color: #fff;
   border-color: #ae905c;
 }
 
@@ -66,7 +66,7 @@ ul.navbar-nav.fs-5 {
 }
 
 .dropdown-item {
-  color: #c2bdbd;
+  color: #a8a7a7;
 }
 
 .col-md-3 > img {
@@ -251,7 +251,7 @@ a.navbar-brand {
 }
 
 .nav-products:hover {
-  color: #3e3e3e;
+  color: #303030;
   font-weight: bolder;
 }
 
@@ -348,7 +348,7 @@ h1.text-center {
   background: rgba(0, 0, 0, 0.904);
 }
 
-.overlayv__words {
+.overlayv__words, .overlay__words {
   color: #fff;
   font-size: 3rem;
   position: absolute;
@@ -455,8 +455,8 @@ h1.text-center {
   position: absolute;
   right: 0;
   width: 0;
-  background: white;
-  border-left: 1px solid black;
+  background: #fff;
+  border-left: 1px solid #000;
   -webkit-animation: maquina 5s infinite alternate steps(29);
           animation: maquina 5s infinite alternate steps(29);
 }

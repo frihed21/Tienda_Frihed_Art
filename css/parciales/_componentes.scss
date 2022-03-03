@@ -21,23 +21,23 @@
     }
         
     .btn-outline-success {
-        color: white;
-        background-color: $color_general;
-        border-color:$color_general;
+        color:map-get($map: $palette, $key: 'c_light');
+        background-color: map-get($map: $palette, $key: 'c_first');
+        border-color:map-get($map: $palette, $key: 'c_first');
     }
 
     .btn-outline-success:hover {
-        color: $color_general;
-        background-color: white;
-        border-color:$color_general;
+        color: map-get($map: $palette, $key: 'c_first');
+        background-color: map-get($map: $palette, $key: 'c_light');
+        border-color:map-get($map: $palette, $key: 'c_first');
     }   
         
     .nav-link {
-        color: $color_general;
+        color: map-get($map: $palette, $key: 'c_first');
         }
     
     .dropdown-item{
-        color: #c2bdbd;
+        color: map-get($map: $palette, $key: 'c_shop_ul');
         }
     
     .col-md-3 > img{
@@ -50,7 +50,7 @@
     
     .foo::after{
         content: " *";
-        color: #303030;   
+        color: map-get($map: $palette, $key: 'c_second');  
         font-weight: bold;
     }
    
