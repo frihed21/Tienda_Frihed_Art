@@ -12,20 +12,14 @@
     object-fit: cover;
 }
 
-// .img__height {
-//     height: 230px;
-//     object-fit: cover;
-//     @include movilL{
-//       height: 330px;
-//     }
-// }
- 
 a.navbar-brand {
   font-size: 1.5rem;
-  color: #ae905c;
+  color: map-get($map: $palette, $key: 'c_first');
   font-weight:bolder;
+  text-transform: uppercase;  
   border-bottom-width: 1px;
   border-bottom-style: solid;
+  
 }
 
 .nav-products:hover{
@@ -33,10 +27,26 @@ a.navbar-brand {
   font-weight: bolder;
 }
 
-h1.text-center {
+h1.text-center{
   margin: 30px 0;
-  color: #ae905c;
+  color: map-get($map: $palette, $key: 'c_first');
   font-weight: bolder;
+}
+
+.footer__span{
+  color: map-get($map: $palette, $key: 'c_second');
+}
+
+p.text-center {
+  margin: 0 50px;
+  font-size: 1.5rem;
+  color: map-get($map: $palette, $key: 'c_second');  
+  @include movilM{
+    margin: 0 20px;
+  }
+  @include movilL{
+    margin: 0 20px;
+  }
 }
 
 .grillado__imagenes {
@@ -305,6 +315,7 @@ h1.text-center {
       &__h2{       
        text-align: center;
        align-items: center;
+       font-size: 1.7rem;
      }
   }
   .form {

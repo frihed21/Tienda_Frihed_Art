@@ -234,6 +234,7 @@ a.navbar-brand {
   font-size: 1.5rem;
   color: #ae905c;
   font-weight: bolder;
+  text-transform: uppercase;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
@@ -247,6 +248,28 @@ h1.text-center {
   margin: 30px 0;
   color: #ae905c;
   font-weight: bolder;
+}
+
+.footer__span {
+  color: #303030;
+}
+
+p.text-center {
+  margin: 0 50px;
+  font-size: 1.5rem;
+  color: #303030;
+}
+
+@media screen and (max-width: 375px) {
+  p.text-center {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  p.text-center {
+    margin: 0 20px;
+  }
 }
 
 .grillado__imagenes {
@@ -592,6 +615,7 @@ h1.text-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.7rem;
 }
 
 .form {
