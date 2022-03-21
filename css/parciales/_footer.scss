@@ -20,7 +20,10 @@
     }
     &__a{
         text-decoration: none;
-        color: map-get($map: $palette, $key: 'c_foottext');
+        color: map-get($map: $palette, $key: 'c_foottext');        
+    }
+    &__a:hover{
+        color:#303030;
     }
     &__bg{
         background-color: map-get($map: $palette, $key: 'c_footfirstbg');
@@ -33,7 +36,7 @@
         height:2rem;
         color: map-get($map: $palette, $key: 'c_first');
         &:hover{
-            color: white;
+            color: #a8a7a7;
         }   
     }
     &__links{

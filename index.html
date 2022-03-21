@@ -11,11 +11,37 @@
     <title>Frihed Art | Galería de Productos</title>
     <link rel="shortcut icon" href="./img/logo_frihedart.ico" type="image/x-icon">    
     <script src="https://kit.fontawesome.com/fb50aa8998.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    
+    
 </head>
 
-<body>
+<body>    
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                      <i style="font-size: 13px;" class="material-icons icon-font-color">close</i>
+                    </button>                  
+                    <p style="font-size: 1.5rem; color: #303030;">  <img src="./img/secretary.png" width="50">  Hola, ¿En qué podemos ayudarte? </p>                 
+                </div>
+                <div class="content-whatsapp -bottom" style="font-size: 1.5rem;">
+                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." /> 
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i  class="material-icons wts_send">send</i>
+                    </button>
+                </div>
+            </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float" >
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+            <div class="circle-anime"></div>
+    </div>
+    
     <header class="header">
         <div class="container-fluid mt-4">
             <div class="row footer-center">
@@ -32,7 +58,7 @@
                 </div>
                 <div class="col-md-4 mb-col-lg-2 mb-3">
                     <div class="header__separation">
-                        <a href="./pages/micuenta.html">
+                        <a href="#">
                             <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
                         </a>
                         <a href="#">
@@ -291,5 +317,6 @@
         </div>   
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    <script  src="./js/script2.js"></script>
 </body>
 </html>

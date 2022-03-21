@@ -13,6 +13,29 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                      <i style="font-size: 13px;" class="material-icons icon-font-color">close</i>
+                    </button>                  
+                    <p style="font-size: 1.5rem; color: #303030;">  <img src="../img/secretary.png" width="50">  Hola, ¿En qué podemos ayudarte? </p>                 
+                </div>
+                <div class="content-whatsapp -bottom" style="font-size: 1.5rem;">
+                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." /> 
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i  class="material-icons wts_send">send</i>
+                    </button>
+                </div>
+            </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float" >
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+            <div class="circle-anime"></div>
+    </div>
+
     <header class="header">
         <div class="container-fluid mt-4">
             <div class="row text-center">
@@ -29,7 +52,7 @@
                 </div>
                 <div class="col-md-4 mb-col-lg-2 mb-3">
                     <div class="header__separation">
-                        <a href="../pages/micuenta.html">
+                        <a href="#">
                             <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
                         </a>
                         <a href="#">
@@ -96,43 +119,49 @@
             </div>
           </nav>
     </header>
- 
-    <div class="grid">
-        <main class="main__grid">
-                <h2 class="h2__grid">Preguntas Frecuentes</h2>
-                    <article class="article__grid">
-                        <h3 class="h5__grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            <p class="parrafo__grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam excepturi accusantium possimus labore odio eum culpa praesentium vitae</p>            
-                    </article>  
-                    <article class="article__grid">
-                        <h3 class="h5__grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            <p class="parrafo__grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam excepturi accusantium possimus labore odio eum culpa praesentium vitae</p>      
-                    </article>
-                    <article class="article__grid">
-                        <h3 class="h5__grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            <p class="parrafo__grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam excepturi accusantium possimus labore odio eum culpa praesentium vitae</p>
-                    </article>
-                    <article class="article__grid">   
-                        <h3 class="h5__grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            <p class="parrafo__grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam excepturi accusantium possimus labore odio eum culpa praesentium vitae</p>
-                    </article>
-                    <article class="article__grid">
-                        <h3 class="h5__grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                        <p class="parrafo__grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam excepturi accusantium possimus labore odio eum culpa praesentium vitae</p>
-                    </article>
-        </main>
 
-    <aside class="aside__grid">
-        <div class="aside__container">
-            <h1>Un poco sobre arte:</h1>                  
-                    <iframe class="aside__iframe" src="https://www.youtube.com/embed/rUHxLrZwSIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="aside__container">
-                <h1>¿Qué son los amigurumis en crochet?</h1>
-                    <iframe class="aside__iframe" src="https://www.youtube.com/embed/nZfQ9LIXigw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </aside>
-    </div>
+    <main>
+        <section class="container mt-5 contact">
+            <h1 class="text-center">PREGUNTAS FRECUENTES</h1>
+                <p class="pregfreg">Conoce un poco más sobre nuesros mecanismo de venta, los costos de envío y métodos de pago. </p>
+                    <div class="row mt-5">
+                        <div class="col-md-8">
+                            <div class="pregfreg__content">
+                                <h3 class="pregfreg__h3">¿Cuánto es el costo de envío de los productos?</h3>
+                                <p class="pregfreg__p">El costo de delivery es de s/ 10 en todo Lima Norte, cualquier otro distrito el costo dependerá de la distancia de la ubicación de envío.</p>            
+                       
+                                <h3 class="pregfreg__h3">¿Tienen tienda física?</h3>
+                                <p class="pregfreg__p">Estuvimos ubicados en varios distritos, pero por motivos de pandemia nos vimos en la obligación de cerrarlos, por el momento todo es virtual.</p>      
+                        
+                                <h3 class="pregfreg__h3">¿Cómo es su método de pago?</h3>
+                                <p class="pregfreg__p">Se realiza una separación del producto con un 25% de adelanto del precio total vía transferencia bancaria, lo restante se puede cancelar en efectivo en la entrega o también por transferencia bancaria.</p>
+                         
+                                <h3 class="pregfreg__h3">¿Existe devolución del producto?</h3>
+                                <p class="pregfreg__p">No existe devolución de producto, la obra de arte, los cuadernos y productos en crochet son tal cual se muestra en las imagenes.</p>
+                        
+                                <h3 class="pregfreg__h3">¿Reaizan entrega a provincia?</h3>
+                                <p class="pregfreg__p">Si realizamos entrega a todo el Perú, se realiza por medio de Olva Courier y se le indica el monto que deberá pagar usted por el envío.</p>  
+
+                                <h3 class="pregfreg__h3">¿Hay promociones o descuentos?</h3>
+                                <p class="pregfreg__p">Si contamos con promociones en fechas especiales y descuentos para nuestros clientes frecuentes.</p>  
+
+                                <h3 class="pregfreg__h3">¿Realizan obras de arte a pedido?</h3>
+                                <p class="pregfreg__p">Si realizamos cuadros, cuadernos y ropa a crochet a pedido del cliente.</p>  
+                            </div> 
+                        </div>
+                        <div class="col-md-4 contact__img">
+                            <aside class="aside__grid">
+                                <div class="aside__container">
+                                    <h1 style="text-align: center; font-weight: bolder;">Un poco sobre arte:</h1>  
+                                    <video class="pregfreg__video" controls autoplay><source src="../img/video_pintando.mp4"></video>     
+                                    <video class="pregfreg__video" controls autoplay><source src="../img/video_art2.mp4"></video>                                                   
+                                </div>                               
+                            </aside>
+                        </div>                       
+                    </div>
+        </section>   
+    </main>
+   
     <footer class="footer">
         <div class="pt-5 fs-5 footer__bg">
             <div class="container">
@@ -234,6 +263,7 @@
             <p class="footer__text footer__textlast" >Todos los derechos reservados. Lima - Perú <br> Diseñado por Katerin Hinostroza® </p>
         </div>   
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <script  src="../js/script2.js"></script>   
 </body>
 </html>
