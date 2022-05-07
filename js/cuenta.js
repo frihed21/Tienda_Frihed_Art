@@ -1,91 +1,79 @@
 class Producto{
-    constructor(tipo, nombre, tamanio, precio){
-        this.tipo = tipo;
-        this.nombre = nombre;
-        this.tamanio = tamanio;
-        this.precio = precio;
-    }
-}
-
-
-let nombreUsuario;
-document.getElementById("idform").addEventListener("submit", realizFormularioUsuario);
-
-function realizFormularioUsuario(e) {
-  e.preventDefault();
-  nombreUsuario = document.getElementById("user").value;
-
-  let listadoProductos = document.getElementById("listadoProductos");
-  const productos = JSON.parse(localStorage.getItem(nombreUsuario));
-
-  if (productos == null) {
-    listadoProductos.innerHTML = "<h1>No hay productos para mostrar</h1>"
-  } else {
-    mostrarProductos(productos);
+  constructor(tipo, nombre, tamanio, precio){
+      this.tipo = tipo;
+      this.nombre = nombre;
+      this.tamanio = tamanio;
+      this.precio = precio;
   }
-  mostrarPanel();
-  e.target.reset()
-}
+}	
 
-function mostrarProductos(productos) {
-  let listadoProductos = document.getElementById("listadoProductos");
-  listadoProductos.innerHTML = "";
-
-  productos.forEach(producto => {
-    let li = document.createElement("li");
-    li.innerHTML = `<hr> ${producto.tipo} - ${producto.nombre} - ${producto.tamanio} - ${producto.precio} soles`;
-    
-    const botonBorrar = document.createElement("button");
-    botonBorrar.innerText = "Borrar";
-    botonBorrar.addEventListener("click", () => {
-      eliminarProducto(producto);
-    })
-    li.appendChild(botonBorrar);
-    
-    listadoProductos.appendChild(li);
-  });
-}
-
-function mostrarPanel() {
-  const opciones = document.getElementById("opciones");
-
-  opciones.innerHTML =
-    `<h3>Bienvenido ${nombreUsuario}</h3>
-    <form id="formulario-producto">
-      <input type="text" id="tipo" placeholder="Tipo">
-      <input type="text" id="nombre" placeholder="Nombre">
-      <input type="text" id="tamanio" placeholder="Tamanio">
-      <input type="number" id="precio" placeholder="Precio">
-      <button type="submit">Agregar producto</button>
-    </form>`;
-
-  document.getElementById("formulario-producto").addEventListener("submit", agregarProducto);
-}
+let productos = JSON.parse(localStorage.getItem("productos")) ?? [];
+document.getElementById("formulario-producto").addEventListener("submit", agregarProducto);
+          
 
 function agregarProducto(e) {
   e.preventDefault();
-  const tipo = document.getElementById("tipo").value;
-  const nombre = document.getElementById("nombre").value;
-  const tamanio = document.getElementById("tamanio").value;
-  const precio = document.getElementById("precio").value;
-  
+  const formulario = new FormData(e.target);
+  const tipo = formulario.get("tipo");
+  const nombre = formulario.get("nombre");
+  const tamanio = formulario.get("tamanio");
+  const precio = formulario.get("precio");
   const producto = new Producto(tipo, nombre, tamanio, precio);
-
-  const productosEnLocalStorage = JSON.parse(localStorage.getItem(nombreUsuario));
-  if (productosEnLocalStorage == null) {
-    localStorage.setItem(nombreUsuario, JSON.stringify([producto]));
-    mostrarProductos([producto]);
-  } else {
-    productosEnLocalStorage.push(producto);
-    localStorage.setItem(nombreUsuario, JSON.stringify(productosEnLocalStorage));
-    mostrarProductos(productosEnLocalStorage);
-  }
-  e.target.reset();
+ if(camposCorrectos(producto)) {
+  productos.push(producto);
+    localStorage.setItem("productos", JSON.stringify(productos));
+    mostrarProductos();
+    e.target.reset();
+ }
 }
+  
+function mostrarProductos() {
+let listadoProductos = document.getElementById("listadoProductos");
+listadoProductos.innerHTML = "";
+
+productos.forEach((producto) => {
+  let li = document.createElement("li");
+  li.innerHTML = `
+  <hr> 
+  ${producto.tipo} - 
+  ${producto.nombre && producto.nombre + " - "}
+  ${producto.tamanio && producto.tamanio + " - "}
+  ${producto.precio && producto.precio + " soles"}`;
+
+  const botonBorrar = document.createElement("button");
+  botonBorrar.innerText = "Borrar";
+  botonBorrar.classList.add("btn", "btn-danger");
+  botonBorrar.addEventListener("click", () => {
+    eliminarProducto(producto);
+  });
+  li.appendChild(botonBorrar);
+  li.classList.add("card");
+    li.setAttribute("data-tilt","");/* le da la capacidad de ser un item que se mueva */
+    li.setAttribute("data-tilt-scale", "1.1");/* escala */
+
+
+  listadoProductos.appendChild(li);
+});
+}
+
 
 function eliminarProducto(producto) {
-  const productosEnLocalStorage = JSON.parse(localStorage.getItem(nombreUsuario));
-  const nuevoArray = productosEnLocalStorage.filter(item => item.nombre != producto.nombre);
-  localStorage.setItem(nombreUsuario, JSON.stringify(nuevoArray));
-  mostrarProductos(nuevoArray);
+Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    productos = productos.filter(item => item.tipo != producto.tipo);
+    localStorage.setItem("productos", JSON.stringify(productos));
+    mostrarProductos();
+    Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
+  }
+});
 }
+
+mostrarProductos();
