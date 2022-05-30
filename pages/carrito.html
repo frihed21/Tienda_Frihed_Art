@@ -3,18 +3,61 @@
     <head>    
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"/>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Venta de tarjetas para regalar en cualquier ocasión especial, tenemos en variedad de tamaños y materiales."> 
-        <meta name="keywords" content="tarjetas, greeting cards, baby showers, cumpleaños, fiestas, diseños, celebraciones, festividades">          
-        <title>Frihed Art | Greeting Cards</title>
+        <meta name="description" content="Ubícanos en Lima, Perú en los distritos de Los Olivos, San Isidro, La Molina y al celular: 51997127018."> 
+        <meta name="keywords" content="Lima, Perú, Los Olivos, Frihed Art, pinturas, papelería, crochet">          
+        <title>Frihed Art | Contactanos</title>
         <link rel="shortcut icon" href="../img/logo_frihedart.ico" type="image/x-icon">    
         <script src="https://kit.fontawesome.com/fb50aa8998.js" crossorigin="anonymous"></script>        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../css/main.css">
-    </head>       
+            
+        <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+        /> -->
+        <!-- <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+        ></script> -->
+        <!-- sweet alert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+        <!-- animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- js custom -->
+        
+        <!-- vanilla tilt  https://github.com/micku7zu/vanilla-tilt.js/blob/master/src/vanilla-tilt.js-->
+        <!-- <script type="text/javascript" src="../js/vanilla-tilt.js" defer></script> -->
+        
+    </head> 
+    <style>
+        .card{
+          background-color: #ffffff;
+          border-radius: 5px;
+          width: 50%;
+          padding: 20px;
+          margin: 20px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .listado{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: auto;
+          justify-content: center;
+        }
+      </style>      
     <body>
+      
         <div class="nav-bottom">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <div class="popup-whatsapp fadeIn">
@@ -54,7 +97,7 @@
                     </div>
                     <div class="col-md-4 mb-col-lg-2 mb-3">
                         <div class="header__separation">
-                            <a href=".#">
+                            <a href="#">
                                 <svg class="header__svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg>
                             </a>
                             <a href="#">
@@ -73,9 +116,9 @@
                     </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>                        
+                    </button>
                     <div class="navbar-collapse me-auto collapse show mt-2" id="navbarSupportedContent">
-                            <ul class="navbar-nav fs-5">
+                             <ul class="navbar-nav fs-5">
                                 <li class="nav-item">
                                     <a class="nav-link" href="../index.html">INICIO</a>
                                 </li>
@@ -93,7 +136,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle header__link--active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     PAPELERÍA
                                     </a>
                                     <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
@@ -111,193 +154,96 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                                    <a class="nav-link header__link--active" href="../pages/contacto.html">CONTACTO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link foo" href="#"><i class="menu_icon fa-moon-o fa" style="color: #303030;"></i> FESTIVIDADES</a>
+                                    <a class="nav-link foo" href="#"><i class="menu_icon fa-moon-o fa" style="color: #303030;"></i>  FESTIVIDADES</a>
                                 </li>                        
-                            </ul>                       
+                            </ul>                        
                     </div>
                 </div>
               </nav>
         </header>
-
+        <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+          Producto Añadido al carrito!
+          </div>
+          <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+            Producto removido!
+          </div>
         <main>
-            <div>
-                <h1  class="text-center">GREETING CARD</h1>                
-                <p class="text-center">Tarjetitas hechas con imaginación y detallismo para que puedas sorprender a esa personita especial. No te pierdas la experiencia de tenerlos en tus manos y elije entre nuestros diversos diseños para la ocasión que desees.</p>                                        
-            </div>
-           
-            <section class="container-fluid mt-5">
-                <div class="row mt-5">
-                    <div class="col-md-2">
-                        <nav id="navbar-example3" class="navbar flex-column align-items-stretch p-3">
-                            <a class="navbar-brand" href="#">TIPO DE PAPEL</a>
-                                <nav class="nav nav-pills flex-column mb-4">
-                                    <a class="nav-link nav-products" href="#item-1">Glassine</a>                                            
-                                    <a class="nav-link nav-products" href="#item-2">Vellum</a>
-                                    <a class="nav-link nav-products" href="#item-1">Opalina</a>                                            
-                                    <a class="nav-link nav-products" href="#item-2">Lino</a>
-                                </nav>
-                            <a class="navbar-brand" href="#">OCASIÓN</a>
-                                <nav class="nav nav-pills flex-column mb-4">
-                                    <a class="nav-link nav-products" href="#item-1">Matrimonio</a>                                            
-                                    <a class="nav-link nav-products" href="#item-1">Cumpleños</a>  
-                                    <a class="nav-link nav-products" href="#item-1">Baby Shower</a>  
-                                    <a class="nav-link nav-products" href="#item-1">Christmas</a>  
-                                    <a class="nav-link nav-products" href="#item-1">Love</a>  
-                                </nav>
-                            <a class="navbar-brand" href="#">MEDIDAS</a>
-                                <nav class="nav nav-pills flex-column mb-4">
-                                    <a class="nav-link nav-products" href="#item-1">A5</a>                                            
-                                    <a class="nav-link nav-products" href="#item-1">A6</a>  
-                                    <a class="nav-link nav-products" href="#item-1">B6</a> 
-                                    <a class="nav-link nav-products" href="#item-1">13x13cm</a>  
-                                    <a class="nav-link nav-products" href="#item-1">15x15cm</a>   
-                                </nav> 
-                        </nav>
-                    </div>
-                    <div class="col-md-10 product">
-                        <div class="row justify-content-evenly product__content">
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar1.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Cactus </p>    
-                                <p> <span style="font-weight: bolder">Tamaño: </span> A5</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 30.00</span> </p>                                                
-                                                                          
+            <section class="container mt-5 contact">
+                <h1 class="text-center">CARRI<span class="footer__span">TO</span></h1>
+                    <p class="contact__h2">Agrega todos los productos que desees</p>
+                        <div class="row mt-5">
+                            <div class="col-md-8">
+                                <!-- <form class="form" action="" id="formulario-producto" method="get" enctype="text/plain" class="form animate__animated animate__fadeInRightBig">
+                                    <div class="form__items">
+                                        <fieldset class="form__content">
+                                            <legend class="form__legend animate__animated animate__fadeInLeftBig">Datos guardados:</legend>
+                                                    <div class="form__flat">
+                                                        <label for="user">Aplicacion de Productos</label>                 
+                                                        <input name="tipo" type="text" id="tipo" placeholder="Tipo" class="form-control m-1" />
+                                                        <input name="nombre" type="text" id="nombre" placeholder="Nombre" class="form-control m-1" />
+                                                        <input name="tamanio" type="text" id="tamanio" placeholder="Tamanio" class="form-control m-1" />
+                                                        <input name="precio" type="number" id="precio" placeholder="Precio" class="form-control m-1" />
+                                                        <button type="submit" class="btn btn-outline-success btn-success m-1">Agregar producto</button>                                        
+                                                    </div>                                                 
+                                        </fieldset>                                         
+                                    </div>                                    
+                                </form>  -->
+                                <!-- <hr />
+                                <ul id="listadoProductos" class="listado"></ul> -->
                             </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar2.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Lila flowers</p>  
-                                <p> <span style="font-weight: bolder">Tamaño: </span> A5</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 20.00</span> </p>                                                
-                                                                            
-                            </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar3.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Ramos agua</p> 
-                                <p> <span style="font-weight: bolder">Tamaño: </span> 13 * 13 cm</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 40.00</span> </p>                                                 
-                                                                             
-                            </div>
+                                              
                         </div>
-
-                        <div class="row justify-content-evenly product__content">
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar4.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Green flower</p> 
-                                <p> <span style="font-weight: bolder">Tamaño: </span> 15 * 15 cm </p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 50.00</span> </p>                                               
-                                                                             
-                            </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar5.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Butterfly 3D</p>     
-                                <p> <span style="font-weight: bolder">Tamaño: </span> B6</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 70.00</span> </p>                                              
-                                                                         
-                            </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar6.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Turquese flower</p> 
-                                <p> <span style="font-weight: bolder">Tamaño: </span> A6</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 50.00</span> </p>                                                
-                                                                             
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-evenly product__content">
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar7.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Circular flower</p>  
-                                <p> <span style="font-weight: bolder">Tamaño: </span> A5</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 40.00</span> </p>                                              
-                                                                            
-                            </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar8.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Aquamarine</p> 
-                                <p> <span style="font-weight: bolder">Tamaño: </span> B6</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 30.00</span> </p>                                                
-                                                                             
-                            </div>
-                            <div class="col-md-3 product__img">
-                                <div class="product__contimg">
-                                    <img class="product__imgall" src="../img/gicar9.jpg" alt="">
-                                        <div class="product__word">
-                                            <div class="product__btn">
-                                                <button type="button" class="btn product__buttonstyle"> AÑADIR A CARRITO</button>
-                                            </div>
-                                        </div>                                      
-                                </div> 
-                                <p class="tituloprod">Gif Multicolor primaveral</p> 
-                                <p> <span style="font-weight: bolder">Tamaño: </span> 13 * 13 cm</p> 
-                                <p> <span style="font-weight: bolder">Precio:</span> <span class="precio">s/ 50.00</span> </p>                                             
-                                                                             
-                            </div>
-                        </div>
-                    </div>                           
-                </div>    
-            </section>
+            </section>   
         </main>
 
-        <footer class="footer">
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade "
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            1
+          </div>
+        
+          <div
+            class="tab-pane fade carrito"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"        >
+        <br>
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              
+            
+              
+            </tbody>
+          </table>
+        <br><br>
+          <div class="row mx-4">
+            <div class="col">
+              <h3 class="itemCartTotal text-white">Total: 0</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <button class="btn btn-success">COMPRAR</button>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+  
+       <footer class="footer">
             <div class="pt-5 fs-5 footer__bg">
                 <div class="container">
                     <div class="row">
@@ -349,9 +295,9 @@
                             <ul class="footer__ul">
                                 <li class="footer__li"><a class="footer__a" href="../pages/nosotros.html">Biografía</a></li>
                                 <li class="footer__li"><a class="footer__a" href="../pages/preguntas.html">Preguntas</a></li>
-                               <li class="footer__li"><a class="footer__a" href="../pages/contacto.html">Contacto</a></li>
-                          </el>
-                        </dev>
+                                <li class="footer__li"><a class="footer__a" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
     
                         <div class="col-md-3 mb-3 mb-lg-0">
                             <h3 class="fw-bold mb-3 footer__title">MI CUENTA</h3>
@@ -398,7 +344,36 @@
                 <p class="footer__text footer__textlast" >Todos los derechos reservados. Lima - Perú <br> Diseñado por Katerin Hinostroza® </p>
             </div>   
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script  src="../js/script2.js"></script>
+         
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+      ></script>
+     <!-- JavaScript Bundle with Popper -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+      ></script>
+      <script src="../js/carrito.js" ></script>
+
     </body>
+</html>
+
+
+
+
+
+
+
+
+    
+
+    
+  
+
+
+    
+  </body>
 </html>

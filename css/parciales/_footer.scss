@@ -1,6 +1,7 @@
 @import "./variables";
 .footer{
-    letter-spacing: 0.1rem;    
+    letter-spacing: 0.1rem;  
+    padding-top: 20px;  
     &__title{
         color: map-get($map: $palette, $key: 'c_first');
         font-size: 1.3rem;
