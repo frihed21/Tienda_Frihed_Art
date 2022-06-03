@@ -8,20 +8,20 @@ Clickbutton.forEach(btno => {
 
 
 function addToCarritoItem(e){
-  const button = e.target
-  const item = button.closest('.product__img')
+  const product__buttonstyle = e.target 
+  const item = product__buttonstyle.closest('.product__img')  
   const itemTitle = item.querySelector('.tituloprod').textContent;
   const itemPrice = item.querySelector('.precio').textContent;
   const itemImg = item.querySelector('.product__imgall').src;
-  
-  const newItem = {
-    title: itemTitle,
-    precio: itemPrice,
-    img: itemImg,
-    cantidad: 1
-  }
 
-  addItemCarrito(newItem)
+  const newItem = {
+     title: itemTitle,
+     precio: itemPrice,
+     img: itemImg,
+     cantidad: 1
+}
+
+   addItemCarrito(newItem)
 }
 
 
@@ -45,13 +45,14 @@ function addItemCarrito(newItem){
     }
   }
   
-  carrito.push(newItem)
+   carrito.push(newItem)
   
-  renderCarrito()
-} 
+   renderCarrito()
+ } 
 
 
-function renderCarrito(){
+ function renderCarrito(){
+   
   tbody.innerHTML = ''
   carrito.map(item => {
     const tr = document.createElement('tr')
@@ -70,8 +71,8 @@ function renderCarrito(){
             </td>
     
     `
-    tr.innerHTML = Content;
-    tbody.append(tr)
+   tr.innerHTML = Content;
+   tbody.append(tr)
 
     tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
     tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
@@ -123,8 +124,8 @@ function sumaCantidad(e){
       item.cantidad = sumaInput.value;
       CarritoTotal()
     }
-  })
-}
+})
+ }
 
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
